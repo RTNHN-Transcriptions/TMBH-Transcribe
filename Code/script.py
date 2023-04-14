@@ -9,7 +9,11 @@ RSS_doc = requests.get(RSS_LINK)
 soup = Soup(RSS_doc.content, features="xml")
 episodes = soup.find_all("item") #item is the xml tag for a podcast episode
 model = whisper.load_model("base.en", "cuda")
-for episode in (pbar := tqdm(episodes)):
+#pbar is a reference to the progress bar object so that the description of
+#the current task within the look can be updated. Note that since it uses the
+#walrus operator (:=), it requires at least python 3.8. Feel free to rewrite
+#to allow earlier versions of python.  
+for episode in (pbar := tqdm(episodes)): 
     try:
         title = episode.title.text
         episode_number = title[:title.find("-")-1]
