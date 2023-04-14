@@ -15,7 +15,7 @@ episodes = soup.find_all("item")
 
 model = whisper.load_model("base.en", "cuda")
 
-for episode in (pbar := tqdm(reversed(episodes), total=900)):
+for episode in (pbar := tqdm(reversed(episodes))):
     try:
         title = episode.title.text
         episode_number = title[:title.find("-")-1]
