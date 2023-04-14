@@ -1,21 +1,15 @@
-import whisper
-from bs4 import BeautifulSoup as Soup
-import requests
+import whisper #pip install openai-whisper
+from bs4 import BeautifulSoup as Soup #pip install bs4 lxml
+import requests #pip install requests - Not actually sure if you need this
 from os.path import exists
-from tqdm import tqdm
+from tqdm import tqdm #pip install tqdm
 
-RSS_FILE = "rss.txt"
-
-with open(RSS_FILE, "r", encoding="utf8") as f:
-    rss = f.read()
-
-soup = Soup(rss, features="xml")
-
-episodes = soup.find_all("item")
-
+RSS_LINK = "https://thetenminutebiblehourpodcast.libsyn.com/rss"
+RSS_doc = requests.get(RSS_LINK)
+soup = Soup(RSS_doc.content, features="xml")
+episodes = soup.find_all("item") #item is the xml tag for a podcast episode
 model = whisper.load_model("base.en", "cuda")
-
-for episode in (pbar := tqdm(reversed(episodes))):
+for episode in (pbar := tqdm(episodes)):
     try:
         title = episode.title.text
         episode_number = title[:title.find("-")-1]
@@ -50,7 +44,9 @@ for episode in (pbar := tqdm(reversed(episodes))):
             f.write(f"url: {url}\n")
             f.write("---\n\n")
             f.write(result["text"])
-    except:
+    except KeyboardInterrupt:
+        raise
+    except Exception:
         title = episode.title.text
         print(f'There was a problem with the episode {title}')
     
