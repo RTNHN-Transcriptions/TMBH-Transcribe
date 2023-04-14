@@ -1,20 +1,22 @@
 import whisper
 from bs4 import BeautifulSoup as Soup
 import requests
+from pathlib import Path
 
 RSS_FILE = "rss.txt"
 
-with open(RSS_FILE, "r") as f:
+with open(RSS_FILE, "r", encoding="utf8") as f:
     rss = f.read()
 
 soup = Soup(rss, features="xml")
 
 episodes = soup.find_all("item")
 
-model = whisper.load_model("small")
+model = whisper.load_model("base.en", "cuda")
 
 for episode in reversed(episodes):
     title = episode.title.text
+    print(f"Working on {title}")
     episode_number = title[:title.find("-")-1]
     title_text = title[title.find("-")+1:].strip()
     pub_date = episode.pubDate.text
@@ -33,14 +35,15 @@ for episode in reversed(episodes):
     print("Transcribing Audio")
     result = model.transcribe("tmp.mp3")
     print("Writing Transcript")
-    with open(f"Transcripts/{title}.md", "w") as f:
-        f.write("---")
-        f.write(f"title: {title_text}")
-        f.write(f"episode_num: {episode_number}")
-        f.write(f"pub_date: {pub_date}")
-        f.write(f"duration: {duration}")
-        f.write(f"subtitle: {subtitle}")
-        f.write("---")
+    with open(f"Transcripts/{episode_number}.md", "w+", encoding="utf8") as f:
+        f.write("---\n")
+        f.write(f"title: {title_text}\n")
+        f.write(f"episode_num: {episode_number}\n")
+        f.write(f"pub_date: {pub_date}\n")
+        f.write(f"duration: {duration}\n")
+        f.write(f"subtitle: {subtitle}\n")
+        f.write(f"url: {url}\n")
+        f.write("---\n\n")
         f.write(result["text"])
     
     
