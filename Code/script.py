@@ -2,6 +2,7 @@ import whisper
 from bs4 import BeautifulSoup as Soup
 import requests
 from os.path import exists
+from tqdm import tqdm
 
 RSS_FILE = "rss.txt"
 
@@ -14,11 +15,11 @@ episodes = soup.find_all("item")
 
 model = whisper.load_model("base.en", "cuda")
 
-for episode in reversed(episodes):
+for episode in (pbar := tqdm(reversed(episodes), total=900)):
     try:
         title = episode.title.text
-        print(f"Working on {title}")
         episode_number = title[:title.find("-")-1]
+        pbar.set_description(f"Working on {episode_number}")
         if exists(f"Transcripts/{episode_number}.md"):
             print(f"Already Transcribed {episode_number}")
             continue
@@ -31,14 +32,14 @@ for episode in reversed(episodes):
             url = url[:url.find(".mp3?")+4]
         duration = episode.find("itunes:duration").text
         subtitle = episode.find("itunes:subtitle").text
-        print("Fetching audio")
+        pbar.set_description(f"Working on {episode_number} - Fetching audio")
         audio = requests.get(url)
-        print("Writing audio to file")
+        pbar.set_description(f"Working on {episode_number} - Writing audio to file")
         with open("tmp.mp3", "wb") as f:
             f.write(audio.content)
-        print("Transcribing Audio")
-        result = model.transcribe("tmp.mp3")
-        print("Writing Transcript")
+        pbar.set_description(f"Working on {episode_number} - Transcribing Audio")
+        result = model.transcribe("tmp.mp3", verbose=False)
+        pbar.set_description(f"Working on {episode_number} - Writing Transcript")
         with open(f"Transcripts/{episode_number}.md", "w+", encoding="utf8") as f:
             f.write("---\n")
             f.write(f"title: {title_text}\n")
