@@ -8,7 +8,10 @@ RSS_LINK = "https://thetenminutebiblehourpodcast.libsyn.com/rss"
 RSS_doc = requests.get(RSS_LINK)
 soup = Soup(RSS_doc.content, features="xml")
 episodes = soup.find_all("item") #item is the xml tag for a podcast episode
-model = whisper.load_model("base.en", "cuda")
+# If you have a GPU in your computer, you can easily set it up to use that
+# so that it is faster. The key takeaway is that you need to add the "cuda"
+# keyword into the .load_model method after the model type.   
+model = whisper.load_model("base.en")
 #pbar is a reference to the progress bar object so that the description of
 #the current task within the look can be updated. Note that since it uses the
 #walrus operator (:=), it requires at least python 3.8. Feel free to rewrite
