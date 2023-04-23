@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Highlight</title>
+    <style>
+        .transcript-section {
+            color: #999999;
+        }
+        .highlight {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> {{ title  }} </h1>
+    <audio style="position:fixed" id="audio" controls>
+        <source src="{{ audio_file }}" type="audio/mp3">
+    </audio>
+    <div id="transcript">
+        {% for section in transcript_sections %}
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="{{ section.start }}" data-end="{{ section.end }}">{{ section.text }}</p>
+        {% endfor %}
+    </div>
+    <script src="transcript.js"></script>
+</body>
+</html>
