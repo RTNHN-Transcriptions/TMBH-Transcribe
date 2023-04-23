@@ -17,7 +17,8 @@ model = whisper.load_model("base.en", "cuda")
 #the current task within the look can be updated. Note that since it uses the
 #walrus operator (:=), it requires at least python 3.8. Feel free to rewrite
 #to allow earlier versions of python.  
-for episode in (pbar := tqdm(episodes)): 
+pbar = tqdm(episodes)
+for episode in pbar: 
     try:
         title = episode.title.text
         episode_number = title[:title.find("-")-1]
