@@ -267,6 +267,34 @@
         <p onclick="seekToTime(event)" class="transcript-section" data-start="612.64" data-end="625.04"> stuff manana. I'm Matt. This is the 10 minute Bible Hour podcast. Let's do this again soon.</p>
         
     </div>
-    <script src="transcript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('audio'); 
+        const transcriptSections = document.querySelectorAll('.transcript-section');
+
+        function updateTranscriptHighlight() {
+            const currentTime = audio.currentTime; 
+
+            transcriptSections.forEach((section) => {
+                const startTime = parseFloat(section.getAttribute('data-start'));
+                const endTime = parseFloat(section.getAttribute('data-end'));
+
+                if (currentTime >= startTime && currentTime <= endTime) {
+                    section.classList.add('highlight');
+                } else {
+                    section.classList.remove('highlight');
+                }
+            });
+        }
+
+        audio.addEventListener('timeupdate', updateTranscriptHighlight); 
+        });
+
+        function seekToTime(event) {
+        const audio = document.getElementById("audio");
+        audio.currentTime = +event.target.getAttribute('data-start')+.1;
+        audio.play()
+        }
+    </script>
 </body>
 </html>
