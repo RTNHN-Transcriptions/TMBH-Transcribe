@@ -1,6 +1,6 @@
 import whisper #pip install openai-whisper
 from bs4 import BeautifulSoup as Soup #pip install bs4 lxml
-import requests #pip install requests - Not actually sure if you need this
+import requests #pip install requests - Not actually sure if you need to install this manually
 from os.path import exists
 from tqdm import tqdm #pip install tqdm
 import json
@@ -14,11 +14,9 @@ episodes = soup.find_all("item") #item is the xml tag for a podcast episode
 # keyword into the .load_model method after the model type.   
 model = whisper.load_model("base.en", "cuda")
 #pbar is a reference to the progress bar object so that the description of
-#the current task within the look can be updated. Note that since it uses the
-#walrus operator (:=), it requires at least python 3.8. Feel free to rewrite
-#to allow earlier versions of python.  
+#the current task within the look can be updated. 
 pbar = tqdm(episodes)
-for episode in pbar: 
+for episode in pbar:
     try:
         title = episode.title.text
         episode_number = title[:title.find("-")-1]
