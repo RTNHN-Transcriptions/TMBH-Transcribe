@@ -4,19 +4,28 @@ import requests #pip install requests - Not actually sure if you need to install
 from os.path import exists
 from tqdm import tqdm #pip install tqdm
 import json
+import torch
+
 
 RSS_LINK = "https://thetenminutebiblehourpodcast.libsyn.com/rss"
+CHECK_LIMIT = 20 
+#There are a lot of problematic episodes, so it will only
+#Check the latest 20 episodes in case I get behind 
+
 RSS_doc = requests.get(RSS_LINK)
 soup = Soup(RSS_doc.content, features="xml")
 episodes = soup.find_all("item") #item is the xml tag for a podcast episode
-# If you have a GPU in your computer, you can easily set it up to use that
-# so that it is faster. The key takeaway is that you need to add the "cuda"
-# keyword into the .load_model method after the model type.   
-model = whisper.load_model("base.en", "cuda")
+
+if torch.cuda.is_available():
+    model = whisper.load_model("base.en", "cuda")
+else:
+    model = whisper.load_model("base.en")
 #pbar is a reference to the progress bar object so that the description of
 #the current task within the look can be updated. 
 pbar = tqdm(episodes)
-for episode in pbar:
+for index, episode in enumerate(pbar):
+    if index > 20:
+        continue
     try:
         title = episode.title.text
         episode_number = title[:title.find("-")-1]
