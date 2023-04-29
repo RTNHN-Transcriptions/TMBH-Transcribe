@@ -9,7 +9,7 @@ import torch
 
 
 def main(RSS_link, check_limit):
-    RSS_doc = requests.get(RSS_LINK)
+    RSS_doc = requests.get(RSS_link)
     soup = Soup(RSS_doc.content, features="xml")
     episodes = soup.find_all("item") #item is the xml tag for a podcast episode
 
@@ -21,7 +21,7 @@ def main(RSS_link, check_limit):
     #the current task within the look can be updated. 
     pbar = tqdm(episodes)
     for index, episode in enumerate(pbar):
-        if index > 20:
+        if index > check_limit:
             continue
         try:
             title = episode.title.text
