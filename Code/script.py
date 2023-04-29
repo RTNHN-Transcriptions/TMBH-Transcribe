@@ -75,7 +75,7 @@ def main(RSS_link, check_limit):
 
 if __name__ == "__main__":
     RSS_LINK = "https://thetenminutebiblehourpodcast.libsyn.com/rss"
-    CHECK_LIMIT = 20 
+    CHECK_LIMIT = 3 
     #There are a lot of problematic episodes, so it will only
     #Check the latest 20 episodes in case I get behind 
     main(RSS_LINK, CHECK_LIMIT)
