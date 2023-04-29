@@ -27,12 +27,11 @@ jobs:
 
     - name: Run Python script
       run: python Code/script.py
-
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: "Add more transcript data"
-        title: "Automatic - add more transcript data"
-        body: "This PR was automatically created by the GitHub Action workflow."
-        branch: "automated-changes-${{ github.run_id }}"
+      
+    - name: Commit changes
+      run: |
+        git config --global user.email "github-action-bot@users.noreply.github.com"
+        git config --global user.name "GitHub Action Bot"
+        git add -A
+        git diff-index --quiet HEAD || git commit -m "Automatically add more transcripts"
+        git push
