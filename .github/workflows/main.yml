@@ -28,10 +28,11 @@ jobs:
     - name: Run Python script
       run: python Code/script.py
 
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "GitHub Action"
-        git config --global user.email "github-actions@example.com"
-        git add Data/.
-        git diff --quiet && git diff --staged --quiet || git commit -m "Transcribe Data"
-        git push
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Add more transcript data"
+        title: "Automatic - add more transcript data"
+        body: "This PR was automatically created by the GitHub Action workflow."
+        branch: "automated-changes-${{ github.run_id }}"
