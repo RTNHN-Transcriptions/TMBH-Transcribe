@@ -9,8 +9,8 @@ function makeEpisode(fileName) {
   const transcriptsUl = document.getElementById("transcripts")
   const episode = document.createElement("li")
   const link = document.createElement("a")
-  link.href = "SmartTranscripts/" + fixedFileName  + ".html"
-  link.textContent = fixedFileName
+  link.href = "SmartTranscripts/" + fileName  + ".html"
+  link.textContent = fileName
   episode.appendChild(link)
   transcriptsUl.appendChild(episode)
 }
