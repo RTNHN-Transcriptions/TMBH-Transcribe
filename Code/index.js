@@ -7,11 +7,12 @@ async function populateList() {
 
 
 function makeEpisode(fileName) {
+  const fixedFileName = fileName.split(".")[0] + ".html"
   const transcriptsUl = document.getElementById("transcripts")
   const episode = document.createElement("li")
   const link = document.createElement("a")
-  link.href = "SmartTranscripts/" + fileName
-  link.textContent = fileName
+  link.href = "SmartTranscripts/" + fixedFileName
+  link.textContent = fixedFileName
   episode.appendChild(link)
   transcriptsUl.appendChild(episode)
 }
