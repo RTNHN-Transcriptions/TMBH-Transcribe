@@ -5,9 +5,7 @@ async function populateList() {
   files.forEach(makeEpisode);
 }
 
-
 function makeEpisode(fileName) {
-  const fixedFileName = fileName.split(".")[0]
   const transcriptsUl = document.getElementById("transcripts")
   const episode = document.createElement("li")
   const link = document.createElement("a")
@@ -17,5 +15,17 @@ function makeEpisode(fileName) {
   transcriptsUl.appendChild(episode)
 }
 
+async function fetchIndex() {
+  const response = await fetch('https://tmbh-transcribe.github.io/TMBH-Transcribe/index.json');
+  const indexJson = await response.json();
+  return lunr.Index.load(indexJson);
+}
+
+async function search(query) {
+  const idx = await fetchIndex();
+  const results = idx.search(query);
+  const ids = results.map(result => result.ref)
+  ids.forEach(makeEpisode)
+}
 
 populateList().then(() => console.log("list updated")).catch((e)=>console.log("Something went wrong"))

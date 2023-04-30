@@ -7,7 +7,8 @@ def main():
   documents = []
   files = []
   for filename in tqdm(os.listdir("Data")):
-    files.append(filename)
+
+    files.append(os.path.splitext(filename)[0])
     doc = {}
     with open(f"Data/{filename}", "r") as f:
       data = json.loads(f.read())
