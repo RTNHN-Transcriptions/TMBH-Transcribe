@@ -46,17 +46,6 @@ def main(RSS_link, check_limit):
                 f.write(audio.content)
             pbar.set_description(f"Working on {episode_number} - Transcribing Audio")
             result = model.transcribe("tmp.mp3", verbose=False)
-            # pbar.set_description(f"Working on {episode_number} - Writing Transcript")
-            # with open(f"Transcripts/{episode_number}.md", "w+", encoding="utf8") as f:
-            #     f.write("---\n")
-            #     f.write(f"title: {title_text}\n")
-            #     f.write(f"episode_num: {episode_number}\n")
-            #     f.write(f"pub_date: {pub_date}\n")
-            #     f.write(f"duration: {duration}\n")
-            #     f.write(f"subtitle: {subtitle}\n")
-            #     f.write(f"url: {url}\n")
-            #     f.write("---\n\n")
-            #     f.write(result["text"])
             meta_data = {"title":title_text,
                         "episode_num":episode_number,
                         "pub_date":pub_date,
