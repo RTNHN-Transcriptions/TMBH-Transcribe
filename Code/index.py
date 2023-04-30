@@ -5,7 +5,9 @@ import os
 
 def main():
   documents = []
+  files = []
   for filename in tqdm(os.listdir("Data")):
+    files.append(filename)
     doc = {}
     with open(f"Data/{filename}", "r") as f:
       data = json.loads(f.read())
@@ -16,12 +18,16 @@ def main():
     doc["body"] = data["transcription_data"]["text"]
     documents.append(doc)
   idx = lunr(ref="id", fields=("episode_num", "title", "subtitle", "body"), documents=documents )
-  return idx
+  files.sort()
+  return idx, files
     
 
 if __name__ == "__main__":
-  idx = main()
+  idx, files = main()
   with open("index.json", "w") as f:
     json.dump(idx.serialize(), f)
+  with open("files.json", "w") as f:
+    json.dump({"files":files}, f)
+  
 
 
