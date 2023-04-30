@@ -1,4 +1,5 @@
 const transcriptsUl = document.getElementById("transcripts")
+const searchBox = document.getElementById('searchBox');
 
 async function populateList() {
   const response = await fetch("https://tmbh-transcribe.github.io/TMBH-Transcribe/files.json");
@@ -35,5 +36,16 @@ function removeAllChildNodes(parent) {
       parent.removeChild(parent.firstChild);
   }
 }
+
+
+searchBox.addEventListener('input', async (event) => {
+    const query = event.target.value;
+
+    if (query.length > 2) {
+        await search(query);
+    }
+});
+
+
 
 populateList().then(() => console.log("list updated")).catch((e)=>console.log("Something went wrong"))
