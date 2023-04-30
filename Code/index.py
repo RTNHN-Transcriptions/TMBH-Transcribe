@@ -13,9 +13,9 @@ def main():
     doc["episode_num"] = os.path.splitext(filename)[0]
     doc["title"] = data["meta_data"]["title"]
     doc["subtitle"] = data["meta_data"]["subtitle"]
-    doc["sequences"] = [segment["text"] for segment in data["transcription_data"]["segments"]]
+    doc["body"] = data["transcription_data"]["text"]
     documents.append(doc)
-  idx = lunr(ref="id", fields=("episode_num", "title", "subtitle", "sequences"), documents=documents )
+  idx = lunr(ref="id", fields=("episode_num", "title", "subtitle", "body"), documents=documents )
   return idx
     
 
