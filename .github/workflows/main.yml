@@ -26,7 +26,10 @@ jobs:
         sudo apt-get install ffmpeg
 
     - name: Run Python script
-      run: python Code/script.py
+      run: |
+        python Code/script.py
+        python Code/index.py
+        python Code/render.py
       
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
