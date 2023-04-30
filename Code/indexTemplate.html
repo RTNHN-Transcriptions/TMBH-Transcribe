@@ -9,9 +9,11 @@
 <body>
   <h1>HTML Files:</h1>
   <ul>
-  {% for file in files %}
+    {% for file in files %}
       <li><a href="{{ 'SmartTranscripts/' + file }}">{{ file }}</a></li>
-  {% endfor %}
-  </ul>
+    {% endfor %}
+</ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+<script src="https://tmbh-transcribe.github.io/TMBH-Transcribe/Code/search.js"></script>
 </body>
 </html>
