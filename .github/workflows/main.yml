@@ -2,7 +2,7 @@ name: Transcribe and save
 
 on:
   schedule:
-    - cron: '0 7 * * 1-5' # This will run the action every weekday at 7 AM
+    - cron: '0 5 * * 1' # This will run the action Monday at 5am
   workflow_dispatch:
     
 
