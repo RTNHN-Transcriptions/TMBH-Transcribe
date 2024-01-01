@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Highlight</title>
+    <style>
+        .transcript-section {
+            color: #999999;
+        }
+        .highlight {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> Whoever You Are, This One's For You </h1>
+    <audio  id="audio" controls>
+        <source src="https://traffic.libsyn.com/secure/thetenminutebiblehourpodcast/NEH001.mp3" type="audio/mp3">
+    </audio>
+    <div id="transcript">
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="0.0" data-end="14.88"> Hey, my friends, it's Matt.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="14.88" data-end="20.72"> This is the 10 Minute Bible Hour Podcast, and I'm super excited because today is...</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="20.72" data-end="21.72"> It's a new day.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="21.72" data-end="22.72"> It's a new series.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="22.72" data-end="25.28"> We're getting started on the book of Nehemiah today.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="25.28" data-end="30.48"> I guess you could say that this is the beginning of season four of this podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="30.48" data-end="32.160000000000004"> Season one, we went all the way through the book of Matthew.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="32.160000000000004" data-end="36.760000000000005"> That took a minute, but I learned so much stuff and had so much fun.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="36.760000000000005" data-end="40.92"> In season two, we went through each book of the Bible, one book per day, just real quick,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="40.92" data-end="42.2"> until we were done.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="42.2" data-end="44.2"> Also, I learned a ton of stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="44.2" data-end="49.120000000000005"> I feel like I came out of that understanding how the whole Bible hangs together better</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="49.120000000000005" data-end="52.0"> than I've ever understood it before.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="52.0" data-end="57.04"> Then we just finished up season three, which was on the book of Esther, which is set in</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="57.04" data-end="64.8"> ancient Persia about 450, 500 years before the time of Jesus with big, bold, loud, colorful</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="64.8" data-end="70.0"> characters and passion and violence and high stakes.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="70.0" data-end="72.92"> Dang it, I did that pun again on accident.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="72.92" data-end="75.64"> There are literal physical high stakes in the book of Esther.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="75.64" data-end="79.64"> For those of you who haven't read it or weren't here for that, like literal, actually, like</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="79.64" data-end="81.92"> for impaling people and stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="81.92" data-end="86.64"> I keep saying that and I really don't even mean to do that pun, but it just keeps happening</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="86.64" data-end="88.08"> and it just bit me in the butt again.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="88.08" data-end="89.08"> There you go.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="89.08" data-end="90.08"> There are high stakes, literally, and figuratively.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="90.08" data-end="97.72"> It's a great book in a fascinating moment in the history of the world.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="97.72" data-end="104.76"> I'm excited about Nehemiah because it allows us to stay in that world of Persia.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="104.76" data-end="111.76"> I'm also excited about Nehemiah because this is the last narrative book of the Old Testament</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="111.76" data-end="115.60000000000001"> and some good things happen in it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="115.60000000000001" data-end="118.08000000000001"> The Old Testament is rough.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="118.08000000000001" data-end="121.04"> You say it's an up and down story, but it's a lot of down.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="121.04" data-end="122.60000000000001"> A lot goes wrong.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="122.60000000000001" data-end="126.36000000000001"> God's people in that story have a really rough go of it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="126.36000000000001" data-end="130.6"> It's easy to feel like at points as you read through the historical books of the Old Testament,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="130.6" data-end="132.52"> like you're just banging your head against the wall.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="132.52" data-end="134.72"> Same stuff, same stuff, same stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="134.72" data-end="141.28"> Nehemiah leaves it on a little different note, not a perfect note, but it certainly feels</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="141.28" data-end="144.28"> different than a lot of the rest of the Old Testament.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="144.28" data-end="148.44"> It's got really big implications for how the world is right now, how the world was at the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="148.44" data-end="155.96"> time of Jesus and surprisingly large amount of implications for personal stuff about life</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="155.96" data-end="160.08"> and growth and relationships and leadership and things like that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="160.08" data-end="164.88000000000002"> I try not to overextend myself when I get into that kind of stuff in the Bible unless</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="164.88000000000002" data-end="169.84"> it's really overt, but there's some of it that you just can't miss in the book of Nehemiah</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="169.84" data-end="175.76000000000002"> about heroism and leadership and courage and failure and how to come back from that and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="175.76000000000002" data-end="177.8"> self-doubt and humility.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="177.8" data-end="183.36"> There's just a bunch of surprisingly applicable things in this book that is really first and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="183.36" data-end="189.56"> foremost about a guy who is the cut bearer to the king of the world, King Artaxerxes</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="189.56" data-end="197.88"> of Persia, who hears that his people's hometown, capital city of Jerusalem is vulnerable and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="197.88" data-end="203.84"> that it's in hard times and that it's in jeopardy and he understands that this is more than just</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="203.84" data-end="206.44"> a town being on hard times economically or something.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="206.44" data-end="210.68"> He understands that there's something much more significant to that about the fate of</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="210.68" data-end="215.68"> the whole world and the fate of the whole redemptive plan of God and everything.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="215.68" data-end="221.8"> And so he takes big, bold, dangerous action to go and do something about it, not tweet</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="221.8" data-end="227.88"> about it, not gripe about it, not forward memes about it, not impotently complain at</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="227.88" data-end="230.28"> Applebee's over Margaritas.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="230.28" data-end="235.16"> He actually gets off his butt and he goes and does something brave and dangerous and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="235.16" data-end="240.60000000000002"> big that he's going to get ridiculed for, man in the arena, all of that kind of stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="240.60000000000002" data-end="242.04000000000002"> And he's flawed.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="242.04" data-end="247.67999999999998"> The execution isn't perfect, but he does something and I find this book to be inspiring</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="247.67999999999998" data-end="249.56"> and compelling.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="249.56" data-end="255.28"> And so I suppose I need to say welcome to a few people here on the front end.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="255.28" data-end="258.68"> First of all, if this is your first time ever here, welcome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="258.68" data-end="259.96"> You are awesome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="259.96" data-end="261.44"> Thank you for checking this thing out.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="261.44" data-end="263.56"> Here's a couple reasons why I think you're awesome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="263.56" data-end="266.96"> One, you know how the internet works and you are smart.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="266.96" data-end="272.35999999999996"> So you can go and scroll through this and see that there are 11 D bajillion episodes</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="272.35999999999996" data-end="274.0"> of this podcast already.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="274.0" data-end="277.68"> I mean, I don't know how you're wired psychologically, but for me, if I see something like that,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="277.68" data-end="281.76"> I feel like I'm on the outside looking in and like it's going to be weird for me to show</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="281.76" data-end="285.28"> up to the party so late, but it's not like that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="285.28" data-end="288.96"> So one, I want to compliment your bravery for jumping into something that's pretty established.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="288.96" data-end="292.12"> You picked a really good place to jump in, by the way, because we kind of start fresh</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="292.12" data-end="293.12"> every time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="293.48" data-end="298.6"> Two, I also want to compliment you on the front end for being open to the idea of kind</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="298.6" data-end="302.52"> of committing to something that might take a minute because sometimes things that are</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="302.52" data-end="308.68"> really meaningful and really push us in the places where we really grow do take a minute.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="308.68" data-end="309.68"> Thank you for being here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="309.68" data-end="312.88"> If it's your first time and being willing to check it out further, though, I know that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="312.88" data-end="316.48"> there are a bunch of you who are here for the first time because yeah, you saw something</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="316.48" data-end="320.6"> I said on the internet, like somehow your algorithm crossed paths with my algorithm</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="320.6" data-end="322.8"> in the night and you're like, Oh, hey.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="322.8" data-end="326.84000000000003"> Yeah, I've kind of been in the market for doing some kind of Bible thing every day.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="326.84000000000003" data-end="328.6"> So yeah, you just saw it somewhere on the internet.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="328.6" data-end="329.6"> Awesome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="329.6" data-end="330.6"> That's a great reason to be here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="330.6" data-end="333.92"> I know that there are a bunch of you here right now, though, who are talking together</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="333.92" data-end="339.72"> with me who are here because somebody you care about has enjoyed this podcast in the past</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="339.72" data-end="343.88"> and they've been asking you to try it out and you are kind and you are empathetic and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="343.88" data-end="347.04"> you are here because you respect them and you care about them.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="347.04" data-end="348.32"> That is awesome of you.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="348.32" data-end="349.32"> You don't know me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="349.32" data-end="350.88"> You don't know anything about me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="350.88" data-end="352.12"> You're here on a vouch.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="352.12" data-end="353.56"> So that's not lost on me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="353.56" data-end="354.64"> I don't take that lightly.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="354.64" data-end="359.0"> I am grateful to your friend or your loved one who asked you to come check it out.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="359.0" data-end="364.08"> And I'm grateful to you for being so kind and empathetic to do so further.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="364.08" data-end="369.4"> I know there are a whole bunch of you here who are in completely different places in</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="369.4" data-end="376.44"> life as it pertains to the big questions about life, death, God, existence, social stuff,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="376.44" data-end="378.6"> relationships, the world, all of that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="378.6" data-end="383.96000000000004"> I know that there are a bunch of you who are here who would say, yeah, I mean, my foundation</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="383.96000000000004" data-end="385.96000000000004"> on the whole faith thing is pretty solid.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="385.96000000000004" data-end="387.40000000000003"> I've been in for a long time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="387.40000000000003" data-end="389.52000000000004"> I care about this kind of stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="389.52000000000004" data-end="391.96000000000004"> I want to invest in it deeply all the time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="391.96000000000004" data-end="394.36"> So this podcast is part of how I do that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="394.36" data-end="396.92"> I think there's a God behind the Bible.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="396.92" data-end="399.72"> And I think he's the one true God, the maker of all things.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="399.72" data-end="406.04"> And every minute I spend thinking about the Bible is a minute that is incredibly valuable</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="406.04" data-end="407.12"> and time well spent.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="407.12" data-end="413.44"> I love that so much of the feedback I get from so many of you is coming from that point,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="413.44" data-end="414.8"> that motivator for curiosity.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="414.8" data-end="419.68"> But I know that there are others of you here who like me got a little dinged up along the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="419.68" data-end="420.68"> way.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="420.68" data-end="424.4"> Maybe you were around God and the Bible and Christianity and church and all that kind of</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="424.4" data-end="430.4"> stuff when you were younger and then stuff got weird, something hurt along the way.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="430.4" data-end="434.44"> There's a weird transition that happened in the age of church somewhere in the early</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="434.44" data-end="438.84"> 2000s, really 2010 and the internet happened.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="438.84" data-end="441.08"> The world got smaller social media happen.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="441.08" data-end="446.76"> I mean, a lot happened in there and it was clumsy for everybody on everything.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="446.76" data-end="449.64"> Some of that manifested in church hurt or doubt.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="449.64" data-end="455.28"> I think surely there's a whole bunch of you who somewhere along the way took a few shots,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="455.28" data-end="457.6"> getting a little dinged up in terms of the faith thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="457.6" data-end="460.52"> And you're still here because you think there's something to it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="460.52" data-end="462.04"> Like I think there's something to it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="462.04" data-end="465.64000000000004"> I think for me, one of the real values of doing this together with you is that we get</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="465.64000000000004" data-end="469.32"> to use our own words and our own eyes and our own ears and we get to look at this thing</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="469.32" data-end="472.76000000000005"> at our own pace with no institutional thing breathing down our neck.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="472.76000000000005" data-end="475.76000000000005"> We've got to get all of this figured out by the end of the semester to get a good grade</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="475.76000000000005" data-end="479.96000000000004"> or well, we've got to get it done by 1215 because church is over then and people got</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="479.96000000000004" data-end="482.24"> to get home and get the roast out of the oven.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="482.24" data-end="483.24"> It's nothing like that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="483.24" data-end="486.52000000000004"> We can take as long as we want and we can just chase down everything that we want and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="486.52" data-end="491.12"> try to go after every bit of curiosity that percolates for me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="491.12" data-end="497.68"> That's a huge reason that I want to do this and be around it because it's a really meaningful</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="497.68" data-end="499.56"> way to engage with the text.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="499.56" data-end="501.28"> It opens up a lot of opportunities for me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="501.28" data-end="503.28"> And I know that some of you are in the same boat.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="503.28" data-end="508.76"> I know that others of you are in a place where you don't believe in God, but you see the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="508.76" data-end="512.48"> Bible as being really compelling and interesting.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="512.48" data-end="516.16"> And maybe you just have somebody in your life who's really into it and you're hyper</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="516.16" data-end="520.0"> empathetic and you want to understand this thing that informs their values and their</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="520.0" data-end="522.64"> rhythms and how they think all the better.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="522.64" data-end="527.16"> And I have huge admiration for those of you who I've heard from who are wired that way,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="527.16" data-end="528.88"> who are here for that reason.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="528.88" data-end="533.64"> That is a remarkable ability to think outside of yourself that would prompt you in that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="533.64" data-end="534.64"> direction.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="534.64" data-end="537.72"> Still, I know there are others of you who suspect that there is something much bigger</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="537.72" data-end="543.52"> to the universe and life than the fully naturalistic explanation that has been fashionable for</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="543.52" data-end="548.76"> the last 75 to 100 years, particularly the last 20 years.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="548.76" data-end="553.0400000000001"> You want to go and quietly feel that out and you want to give it a fair shake and you want</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="553.0400000000001" data-end="556.8000000000001"> to look close at it with your own eyes and think about it for yourself.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="556.8000000000001" data-end="558.72"> I resonate with that curiosity.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="558.72" data-end="564.1600000000001"> I could go on and on about the journey of faith, the process of faith and what that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="564.1600000000001" data-end="567.6800000000001"> has looked like in the lives of so many people I've talked to, what that looks like in my</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="567.68" data-end="568.68"> own life.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="568.68" data-end="570.9599999999999"> But the bottom line is I'm so grateful you're here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="570.9599999999999" data-end="574.68"> I'm so grateful that we don't have to be identical to hang out together.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="574.68" data-end="578.4"> I love that this is a weird group of people.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="578.4" data-end="580.76"> You and me hanging out here working this thing through.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="580.76" data-end="584.9599999999999"> I love that we will ultimately not all land at exactly the same set of conclusions.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="584.9599999999999" data-end="591.0"> I love that I feel no pressure here to try to make you me or see everything about the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="591.0" data-end="593.92"> world exactly as I do.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="593.92" data-end="595.3599999999999"> It's an internet man.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="595.36" data-end="596.88"> We don't think it doesn't work.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="596.88" data-end="598.6"> It isn't how things are here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="598.6" data-end="600.96"> So the pressure is off.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="600.96" data-end="606.0"> The upside I think is huge and tomorrow we're going to start getting into the nuts and bolts</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="606.0" data-end="608.4"> of what exactly is going on in this book.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="608.4" data-end="609.84"> And I think it's going to be a blast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="609.84" data-end="614.8000000000001"> Thank you so much for being here and for hanging out with me and more Nehemiah.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="614.8000000000001" data-end="615.8000000000001"> Manana.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="615.8000000000001" data-end="616.8000000000001"> All right.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="616.8000000000001" data-end="617.8000000000001"> I'm Matt.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="617.8000000000001" data-end="618.8000000000001"> This is a 10 minute Bible Hour podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="618.8000000000001" data-end="619.8000000000001"> Let's do this again soon.</p>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('audio'); 
+        const transcriptSections = document.querySelectorAll('.transcript-section');
+
+        function updateTranscriptHighlight() {
+            const currentTime = audio.currentTime; 
+
+            transcriptSections.forEach((section) => {
+                const startTime = parseFloat(section.getAttribute('data-start'));
+                const endTime = parseFloat(section.getAttribute('data-end'));
+
+                if (currentTime >= startTime && currentTime <= endTime) {
+                    section.classList.add('highlight');
+                } else {
+                    section.classList.remove('highlight');
+                }
+            });
+        }
+
+        audio.addEventListener('timeupdate', updateTranscriptHighlight); 
+        });
+
+        function seekToTime(event) {
+        const audio = document.getElementById("audio");
+        audio.currentTime = +event.target.getAttribute('data-start')+.1;
+        audio.play()
+        }
+    </script>
+</body>
+</html>
