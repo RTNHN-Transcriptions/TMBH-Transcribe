@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Highlight</title>
+    <style>
+        .transcript-section {
+            color: #999999;
+        }
+        .highlight {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> A Practical Question About the Event </h1>
+    <audio  id="audio" controls>
+        <source src="https://traffic.libsyn.com/secure/thetenminutebiblehourpodcast/NEH101.mp3" type="audio/mp3">
+    </audio>
+    <div id="transcript">
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="0.0" data-end="4.32"> You're listening to the 10 Minute Bible Hour Podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="4.32" data-end="6.72"> It's fast, fun, free, daily, deep-dye Bible.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="6.72" data-end="9.36"> And right now we're working on the book of EMIA.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="9.36" data-end="10.8"> If you're new, welcome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="10.8" data-end="14.52"> You can jump in right here or you can always go back and start at the beginning of any</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="14.52" data-end="15.52"> season.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="15.52" data-end="20.84"> The whole podcast is available in an easy to use format at thetmbh.com.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="20.84" data-end="26.68"> As we're looking at EMIA Chapter 8 today and the events of September 27th, 444 BC where</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="26.68" data-end="33.0"> they had a great big giant assembly near the Watergate in the recently rebuilt city</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="33.0" data-end="40.0"> of Jerusalem hosted by Ezra and Nehemiah, one of the great all-time literary crossover</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="40.0" data-end="41.36"> events.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="41.36" data-end="46.64"> As this is happening, there's a massive assembly and there's a very practical question that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="46.64" data-end="49.36"> I have about it that I want to explore with you.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="49.36" data-end="51.879999999999995"> But first, let me just read the passage that we're looking at here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="51.879999999999995" data-end="54.480000000000004"> It's a Nehemiah Chapter 8, basically Chapter 8.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="54.480000000000004" data-end="56.120000000000005"> It's the end of 7 and into 8.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="56.12" data-end="60.8"> When the seventh month came and the Israelites settled in their towns, all the people assembled</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="60.8" data-end="66.24"> as one man in the square before the Watergate in September 27th, 444 BC.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="66.24" data-end="70.92"> And you'll notice the language here is pretty passive.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="70.92" data-end="77.03999999999999"> It doesn't say all the people were assembled as one man as though someone did it or rounded</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="77.03999999999999" data-end="78.8"> them up or like, all right, we finished the thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="78.8" data-end="79.8"> Now we got to do the thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="79.8" data-end="84.88"> You get the impression from the text that they wanted to be there and that this seemed</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="84.88" data-end="91.67999999999999"> like the next natural step to take, given the undertaking they had just completed.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="91.67999999999999" data-end="92.67999999999999"> Who knows?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="92.67999999999999" data-end="97.92"> Maybe people put out flyers, you know, stapled things to telephone polls and their phone</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="97.92" data-end="98.92"> numbers you could tear off.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="98.92" data-end="100.64"> Like, we're having a meeting at the Watergate.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="100.64" data-end="101.8"> Make sure to show up at this time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="101.8" data-end="103.16"> Maybe that was the case.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="103.16" data-end="107.72"> But from the text, you get the impression that this is something everybody really just</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="107.72" data-end="109.03999999999999"> wanted to do.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="109.03999999999999" data-end="113.0"> They told Ezra the scribe to bring out the book of the law of Moses, which the Lord</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="113.0" data-end="114.68"> had commanded for Israel.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="114.68" data-end="120.28"> Now, there's a little bit of debate here about what we mean by the book of the law of Moses.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="120.28" data-end="125.76"> Some smart people look at this and say, well, that would be the five books that are attributed</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="125.76" data-end="127.16"> to Moses in the Old Testament.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="127.16" data-end="131.6"> The first five books, Genesis, Exodus, Leviticus, Numbers, and Deuteronomy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="131.6" data-end="136.24"> If you don't remember what all of those things are, it's easy to do a quick brush up because</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="136.24" data-end="137.96"> we did that through the Bible series.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="137.96" data-end="144.12"> The first five episodes of season two are one day single episode summaries of each of</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="144.12" data-end="149.48000000000002"> those five books, but we've kind of touched on them here over the last week or so.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="149.48000000000002" data-end="155.12"> And the gist of these five books is that the human problem is introduced.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="155.12" data-end="160.96"> The idea that God has made a covenant with and chosen Abraham and his descendants to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="160.96" data-end="165.68"> work through and to be in relationship with is introduced.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="165.68" data-end="169.48000000000002"> Then we figure out these people like all people have pretty serious problems.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="169.48000000000002" data-end="171.32"> They end up in slavery.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="171.32" data-end="176.48000000000002"> God miraculously frees them from slavery, getting them out of Egypt and tells them that they're</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="176.48000000000002" data-end="180.8"> going to go to this promised land that is meant for them, but they don't go.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="180.8" data-end="186.64000000000001"> They hang out in the desert for a long time because the generation that escaped Egypt</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="186.64000000000001" data-end="193.68"> sort of has a social, moral, ethical personality character meltdown out there in the desert.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="193.68" data-end="199.76000000000002"> But instead, God takes in the next generation, the ones that were more or less born in the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="199.76000000000002" data-end="206.88"> desert to be the ones to go in and conquer the little kingdoms within Canaan and to establish</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="206.88" data-end="213.32"> themselves in that place, probably around 1200 or maybe as far back as 1400 BC.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="213.32" data-end="217.56"> Then the rest of the first five books of the Old Testament is about this covenant, this</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="217.56" data-end="223.20000000000002"> deal that God makes between himself and the descendants of Abraham who are alive led by</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="223.2" data-end="224.44"> Moses.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="224.44" data-end="228.39999999999998"> Some of the stuff in there is very big picture and everybody's heard of it, like the Ten</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="228.39999999999998" data-end="229.39999999999998"> Commandments.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="229.39999999999998" data-end="235.16"> Some of the stuff in there is very, very specific and even the kind of thing that can be fodder</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="235.16" data-end="239.92"> for internet joking and so forth because this rule seems really picky-unish or that rule</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="239.92" data-end="246.6"> seems very particular or this rule flies in the face of immutable, very recent cultural</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="246.6" data-end="250.39999999999998"> assumptions and trends.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="250.4" data-end="254.88"> Even if you haven't really read through the Bible sort of by cultural osmosis, you will</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="254.88" data-end="259.4"> have caught tons of stuff from the first five books.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="259.4" data-end="263.04"> Now we have spent a little bit of time in the book of Deuteronomy of late.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="263.04" data-end="264.56"> Well, it breaks down like this.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="264.56" data-end="268.64"> Some smart people think that what I just told you about, the stories and the giving of the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="268.64" data-end="273.56"> law and all of that business in those full five books, that that is what the people were</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="273.56" data-end="276.96000000000004"> saying, bring out Ezra, read to us that stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="276.96000000000004" data-end="278.32"> We want to know that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="278.32" data-end="281.84"> There are other real smart people who are saying, well, they just would have pulled</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="281.84" data-end="288.32"> out the book of Deuteronomy because Deuteronomy sort of sums up everything from those first</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="288.32" data-end="296.48"> five books, the books of Moses and Deuteronomy would already be a pre-baked template for</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="296.48" data-end="301.84"> how to host the kind of event that they were looking to have here on September 27th, 444</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="301.84" data-end="308.47999999999996"> BC, sort of a covenant renewal, a proclamation of the covenant and a rededication of the masses</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="308.47999999999996" data-end="309.47999999999996"> to the covenant.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="309.47999999999996" data-end="311.67999999999995"> Deuteronomy is more or less just that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="311.67999999999995" data-end="317.71999999999997"> It's one big long meeting mostly and it covers the ins and outs and little detail stuff of</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="317.71999999999997" data-end="321.28"> the law that feels kind of foreign to the modern reader at first glance.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="321.28" data-end="325.03999999999996"> And it also covers the big picture stuff of the law, like the big commandments and all</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="325.03999999999996" data-end="326.12"> of that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="326.12" data-end="327.84"> And it covers the terms and conditions.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="327.84" data-end="329.0"> What happens if you obey this?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="329.0" data-end="330.76"> What happens if you don't?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="330.76" data-end="333.56"> It covers the character of God, his faithfulness.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="333.56" data-end="341.12"> It's all right there and it gives also a model for how the people as an assembly as a crowd</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="341.12" data-end="344.03999999999996"> can assent to it and sign off on it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="344.03999999999996" data-end="349.15999999999997"> So there's good reason in terms of the content of the first five books of the Bible to make</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="349.15999999999997" data-end="353.88"> a case for, hey, you know, when he said, he said, get out the book of the law of Moses,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="353.88" data-end="355.15999999999997"> they met the first five books.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="355.15999999999997" data-end="359.71999999999997"> There's also good reason from a content perspective to argue, well, they just would have meant</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="359.72" data-end="364.68"> Deuteronomy because basically what they go on to do here in the rest of Nehemiah is Deuteronomy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="364.68" data-end="369.08000000000004"> They follow the beats of the meeting described in Deuteronomy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="369.08000000000004" data-end="374.96000000000004"> But I would like to take a bit more practical look at that and suggest to you that I think</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="374.96000000000004" data-end="380.88000000000005"> it's more likely that it was just the book of Deuteronomy that they were looking at here,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="380.88000000000005" data-end="384.76000000000005"> simply from a time constraint perspective.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="384.76000000000005" data-end="385.84000000000003"> Think about this.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="385.84" data-end="389.47999999999996"> You and I, whatever it was a few years ago, we decided we were going to go through the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="389.47999999999996" data-end="391.0"> whole book of Matthew together and we did that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="391.0" data-end="392.0"> It was very, very fun.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="392.0" data-end="393.0"> There's 28 chapters in Matthew.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="393.0" data-end="394.44"> I don't know why I'm flipping over there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="394.44" data-end="398.47999999999996"> I know by heart that there are 28 chapters in Matthew, but I'm there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="398.47999999999996" data-end="399.47999999999996"> Yep.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="399.47999999999996" data-end="400.47999999999996"> Sure enough.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="400.47999999999996" data-end="401.47999999999996"> 28.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="401.47999999999996" data-end="402.47999999999996"> I looked at it with my own eyes just now.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="402.47999999999996" data-end="403.47999999999996"> They haven't added one.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="403.47999999999996" data-end="405.44"> It's still 28 just like it was last time I read it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="405.44" data-end="412.08"> It took us 800 episodes to get through that 800 episodes.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="412.08" data-end="413.52"> That's a long, long time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="413.52" data-end="416.71999999999997"> What was that in real time for you and me like three years or something like that?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="416.71999999999997" data-end="419.24"> That was a very, very long time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="419.24" data-end="421.12"> Why did it take so long?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="421.12" data-end="428.52"> I guess we could have just read Matthew and that would have taken maybe 20 daily episodes,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="428.52" data-end="429.52"> 28 daily episodes.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="429.52" data-end="433.28"> If we did a chapter per day, I think that's probably realistic.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="433.28" data-end="435.47999999999996"> But it took longer, of course, because we were working on it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="435.47999999999996" data-end="439.97999999999996"> We were trying to understand it and to follow all the little rabbit trails and really get</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="439.97999999999996" data-end="442.08"> what Jesus was saying and what Matthew was saying.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="442.08" data-end="446.24"> Jesus was presented and what you're supposed to do with it and all that kind of stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="446.24" data-end="447.71999999999997"> That takes a minute.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="447.71999999999997" data-end="452.03999999999996"> Well, that is what's going on here, verse two of Nehemiah 8.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="452.03999999999996" data-end="456.47999999999996"> So on the first day of the seventh month, September 27th, 444 BC, as were the priest</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="456.47999999999996" data-end="461.71999999999997"> brought the law before the assembly, which was made up of men and women and all who were</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="461.71999999999997" data-end="463.4"> able to understand.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="463.4" data-end="468.71999999999997"> He read it aloud from daybreak till noon as he faced the square before the water gate</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="468.72" data-end="473.84000000000003"> in the presence of the men, women and others who could understand and all the people listened</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="473.84000000000003" data-end="476.20000000000005"> attentively to the book of the law.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="476.20000000000005" data-end="479.36"> And then there's kind of a description of what the scene looked like and we'll go over</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="479.36" data-end="480.92"> all of that here in the coming days.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="480.92" data-end="484.04"> But then we skip ahead to verse eight and it says, they read from the book of the law</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="484.04" data-end="485.04"> of God.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="485.04" data-end="490.0"> Here it is, making it clear and giving the meaning so that the people could understand</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="490.0" data-end="492.32000000000005"> what was being read.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="492.32000000000005" data-end="494.48"> First of all, everybody's there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="494.48" data-end="498.36"> Now if we're talking about right now, you wouldn't need to say as much about it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="498.36" data-end="501.84000000000003"> But we're talking about a long, long time ago when there were very different sensibilities</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="501.84000000000003" data-end="506.24"> and different cultural realities, roles were very different in society.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="506.24" data-end="511.92"> And what we're getting a description of here is the whole assembly is showing up men, women,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="511.92" data-end="513.32"> children.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="513.32" data-end="516.84"> Well when you speak to a room that includes children, you have to change what you're</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="516.84" data-end="518.76"> doing a little bit.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="518.76" data-end="525.0"> And if you're speaking in 444 BC and all of the women are present as well, well, they've</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="525.04" data-end="529.08"> occupied a different role in society than the guys do.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="529.08" data-end="533.2"> And so you're going to need to frame it differently with the fact that the ladies are present</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="533.2" data-end="537.6"> as well and that they're eager to be a part of this covenant and own their part of it</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="537.6" data-end="538.6"> as well.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="538.6" data-end="542.4"> And then you've got the guys who are here as well and they've got Persian sensibilities</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="542.4" data-end="546.52"> and they've got pressures economically and all the things that come along with being who</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="546.52" data-end="547.52"> they are.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="547.52" data-end="549.44"> So this is a complex thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="549.44" data-end="551.0400000000001"> It's not going to be quick.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="551.0400000000001" data-end="558.32"> You really are explaining the law to three very different sets of ears in this environment</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="558.32" data-end="560.8800000000001"> and no doubt it took a really long time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="560.8800000000001" data-end="565.72"> And that's why I think that there's no way they could have got through the entire penituke</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="565.72" data-end="567.44"> in that amount of time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="567.44" data-end="572.5200000000001"> I mean, I wouldn't say I'm an expert, but I mean, sometimes I do take parts of the Bible</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="572.5200000000001" data-end="577.08"> and try to think real hard about it and explain it to diverse audience.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="577.08" data-end="583.4000000000001"> So not an expert, but I have tried it and it kind of takes a minute.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="583.4000000000001" data-end="586.6"> If you're trying to make it really stick and sink in and you're really trying to think</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="586.6" data-end="587.96"> about it honestly.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="587.96" data-end="590.08"> So I bet they just got through Deuteronomy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="590.08" data-end="594.5200000000001"> So my guess is that they were just following the beats of the meeting described in the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="594.5200000000001" data-end="600.82"> book of Deuteronomy with Ezra standing in as something of a surrogate for Moses and his</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="600.82" data-end="606.22"> role explaining the law for a second time to the people so that they might understand</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="606.22" data-end="612.34"> it and internalize it and write it on their hearts and commit themselves to it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="612.34" data-end="618.34"> And then the people here in Nehemiah at the Watergate are standing in for the people in</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="618.34" data-end="621.2600000000001"> the desert back in Deuteronomy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="621.2600000000001" data-end="622.6600000000001"> They're listening to their teacher.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="622.6600000000001" data-end="626.2600000000001"> They're making sure they understand what they are signing up for and committing themselves</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="626.26" data-end="627.26"> to.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="627.26" data-end="633.1"> And they're going to make a big public proclamation of, yeah, we're in once they get it and they</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="633.1" data-end="636.66"> know exactly what it is that they're making this commitment to.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="636.66" data-end="639.74"> I said I had a practical thing that I wanted to talk about when it comes to this.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="639.74" data-end="643.18"> And it was actually two practical things that I wanted to get to.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="643.18" data-end="646.8199999999999"> One was what we dealt with and the other was a question about how do you actually even</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="646.8199999999999" data-end="652.34"> make this audible, perceptible to the people out there when so many people are present,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="652.34" data-end="656.1"> you don't have any microphone or electronic amplification.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="656.1" data-end="659.5400000000001"> So we'll get to the second of those practical concerns as we get into how they built out</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="659.5400000000001" data-end="664.5"> this meeting and what it looked like and potentially what the implications of that would be next</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="664.5" data-end="665.82"> time around.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="665.82" data-end="672.62"> Thank you so much to everybody who went and subscribed to my super fledgling little YouTube</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="672.62" data-end="675.46"> channel that is this podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="675.46" data-end="680.14"> This is kind of a brave new world for me because with a podcast the way you and I have done</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="680.14" data-end="683.78"> it, the way it's typically distributed, it's not very searchable.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="683.78" data-end="687.54"> So if anybody's here, they're here without the help of the algorithm.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="687.54" data-end="692.42"> I'm guessing that's true of you here because you found it or somebody told you about it</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="692.42" data-end="696.54"> or sometimes I put things on Facebook and maybe you saw something over there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="696.54" data-end="702.5"> I don't know how you got here, but probably not because an algorithm suggested it to you.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="702.5" data-end="708.4599999999999"> Well, people are going to start to find this thing via the YouTube algorithm now based</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="708.46" data-end="711.4200000000001"> on it all being suddenly searchable.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="711.4200000000001" data-end="713.94"> And I think it's going to be a very interesting thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="713.94" data-end="721.6600000000001"> And what I would love to do is kind of cue the YouTube algorithm as to who might enjoy</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="721.6600000000001" data-end="724.6600000000001"> this by having you subscribe to it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="724.6600000000001" data-end="729.86"> It really is a big help in framing this the right way and getting it in front of people.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="729.86" data-end="732.02"> So thank you to all of you who took a moment to do that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="732.02" data-end="733.6600000000001"> I really do appreciate it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="733.6600000000001" data-end="735.3000000000001"> If you don't want to do that, it's not weird.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="735.3000000000001" data-end="736.5"> That's totally cool as well.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="736.66" data-end="737.5"> All right.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="737.5" data-end="740.74"> Next time around, we're going to talk about how Ezra was able to be heard in such a big,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="740.74" data-end="743.42"> giant open air setting.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="743.42" data-end="746.5"> And we're going to talk about implications that I think kind of matter coming out of</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="746.5" data-end="747.98"> that as well.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="747.98" data-end="750.34"> A mat is the 10 minute Bible Hour podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="750.34" data-end="751.82"> Let's do this again soon.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="751.82" data-end="755.58"> This podcast exists because many of you kick in to make it happen even though you don't</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="755.58" data-end="756.58"> have to.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="756.58" data-end="760.46"> Learn more at thetmbh.com slash support.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="760.46" data-end="762.34"> We're grateful because that supports our family.</p>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('audio'); 
+        const transcriptSections = document.querySelectorAll('.transcript-section');
+
+        function updateTranscriptHighlight() {
+            const currentTime = audio.currentTime; 
+
+            transcriptSections.forEach((section) => {
+                const startTime = parseFloat(section.getAttribute('data-start'));
+                const endTime = parseFloat(section.getAttribute('data-end'));
+
+                if (currentTime >= startTime && currentTime <= endTime) {
+                    section.classList.add('highlight');
+                } else {
+                    section.classList.remove('highlight');
+                }
+            });
+        }
+
+        audio.addEventListener('timeupdate', updateTranscriptHighlight); 
+        });
+
+        function seekToTime(event) {
+        const audio = document.getElementById("audio");
+        audio.currentTime = +event.target.getAttribute('data-start')+.1;
+        audio.play()
+        }
+    </script>
+</body>
+</html>
