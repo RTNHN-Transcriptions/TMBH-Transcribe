@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Highlight</title>
+    <style>
+        .transcript-section {
+            color: #999999;
+        }
+        .highlight {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> The Hardest Words to Say </h1>
+    <audio  id="audio" controls>
+        <source src="https://traffic.libsyn.com/secure/thetenminutebiblehourpodcast/NEH116.mp3" type="audio/mp3">
+    </audio>
+    <div id="transcript">
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="0.0" data-end="3.4"> You're listening to the 10 Minute Bible Hour Podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="3.4" data-end="5.8"> It's fast, fun, free, daily deep-dye Bible.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="5.8" data-end="8.0"> And right now we're working on the book of Nehemiah.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="8.0" data-end="9.5"> If you're new, welcome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="9.5" data-end="14.0"> You can jump in right here or you can always go back and start at the beginning of any season.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="14.0" data-end="20.0"> The whole podcast is available in an easy-to-use format at thetmbh.com.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="20.0" data-end="24.7"> All right, look, every single one of us has been on the giving side</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="24.7" data-end="31.2"> and the receiving side of a deeply broken, deeply painful relationship.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="31.2" data-end="32.2"> This happens.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="32.2" data-end="37.7"> It's part of the barnacles that stick to the whole of our soul and our lives as we age.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="37.7" data-end="39.5"> We have relational fallout.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="39.5" data-end="40.5"> We have pain.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="40.5" data-end="47.8"> Even wonderful people, far better, more moral, more enlightened, more intelligent people than me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="47.8" data-end="53.0"> Even you all who are just great at everything and emotionally mature.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="53.0" data-end="56.8"> Even you have relationships that break over the course of your life.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="56.8" data-end="59.0"> It happens to all of us.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="59.0" data-end="60.3"> And it hurts.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="60.3" data-end="63.8"> These are the things that we apparently regret on our deathbed.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="63.8" data-end="65.0"> I've never been on my deathbeds.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="65.0" data-end="70.0"> I don't know for sure, but I think probably I'll be sad about relationships that I couldn't fix.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="70.0" data-end="76.8"> And I bet that if you think back on the really hurtful, really broken relationships,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="76.8" data-end="78.3"> you could pick one right now.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="78.3" data-end="79.0"> Go ahead and do it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="79.0" data-end="79.6"> Picture it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="79.6" data-end="80.4"> Got it?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="80.60000000000001" data-end="86.4"> I bet that there is one thing that you wish that person would come and say to you.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="86.4" data-end="89.60000000000001"> And if they said it, then you would have reconciliation.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="89.60000000000001" data-end="92.30000000000001"> You would agree on what the whole backstory is.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="92.30000000000001" data-end="96.0"> The things you've fought about and disagreed about the lies.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="96.0" data-end="99.9"> All of that would wash away with that one thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="99.9" data-end="106.0"> If Kelly would just come to you and be like, what you said I did, I lied about it for years,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="106.0" data-end="107.7"> but you were right all along.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="107.7" data-end="109.2"> I did that thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="109.2" data-end="113.2"> And the reason you said that you thought I did it, you were right all along.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="113.2" data-end="117.7"> I did it for exactly the reason that you said you thought I did it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="117.7" data-end="121.8"> And I was wrong and I regret it and it's consuming my soul.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="121.8" data-end="127.60000000000001"> And I need nothing from you other than forgiveness because you said the things that were true the entire time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="127.60000000000001" data-end="129.4"> I'm so, so, so sorry.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="129.4" data-end="130.9"> Will you forgive me?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="130.9" data-end="135.8"> I bet there are some of you who if metaphorical Kelly came to you right now and said basically that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="135.8" data-end="139.8"> those would be the words that would fix the thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="139.8" data-end="141.0"> Maybe you've forgiven.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="141.0" data-end="142.20000000000002"> Maybe you've forgotten.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="142.20000000000002" data-end="143.60000000000002"> Maybe you've done your best to move on.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="143.60000000000002" data-end="147.8"> Maybe both parties have and you just sort of left it at an unsettled impasse.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="147.8" data-end="149.0"> You know, I'm not going to try to hurt you.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="149.0" data-end="151.9"> You don't try to hurt me and we'll just kind of, you know, move on without trust.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="151.9" data-end="153.20000000000002"> Maybe we'll never see each other again.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="153.20000000000002" data-end="154.0"> Whatever.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="154.0" data-end="155.9"> That's not the ideal though.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="155.9" data-end="163.3"> What you want, what your heart yearns for in those truly broken relationships is reconciliation.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="163.3" data-end="165.0"> That's different than forgiveness.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="165.0" data-end="166.6"> That's more than forgiveness.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="166.6" data-end="171.8"> That is being made whole and made right with each other and it's elusive and it's a difficult.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="171.8" data-end="177.9"> And when you achieve it, those relationships often thrive in ways that no other relationship</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="177.9" data-end="184.6"> ever does in a lifetime when you achieve it because reconciliation, it covers over a whole</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="184.6" data-end="186.8"> stack of ugly stuff from the past.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="186.8" data-end="191.6"> It's like there was a time when checkbooks were a thing and I had one for a little while</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="191.6" data-end="193.6"> when I was a kid and they were still popular.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="193.6" data-end="194.6"> It's like 16.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="194.6" data-end="195.6"> I got my first checkbook.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="195.6" data-end="201.6"> I got like 80 bucks in there and I'd write a check for $2.97 to Burger King or something</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="201.6" data-end="203.0"> three or four times a month.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="203.0" data-end="207.5"> Then at the end of the month, I would get mailed a statement of all the checks I wrote,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="207.5" data-end="209.1"> all five of them.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="209.1" data-end="213.04"> And I'd have to look in my book to see if everything I said happened was the same as</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="213.04" data-end="214.68"> what the bank said happened.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="214.68" data-end="219.24"> And if there were any discrepancies, I had to talk with the bank to work things out with</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="219.24" data-end="225.24"> them and make sure we were on the same page as to what the truth of the matter was.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="225.24" data-end="226.24"> That's reconciliation.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="226.24" data-end="234.4"> Well, the reason that reconciliation is hard is because it requires a swallowing of pride</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="234.4" data-end="235.88"> oftentimes.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="235.88" data-end="241.4"> It requires us to admit things we don't want to admit to because generally, if there's</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="241.4" data-end="247.0"> been a relational falling out, most of the time we have ownership of that at some level.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="247.0" data-end="251.24"> And most of the time the falling out happened over things that are really damaged about</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="251.24" data-end="256.08"> our character or they happen over a lapse in our integrity.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="256.08" data-end="263.12"> And we can't live with ourselves if that story that makes us look awful is true.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="263.12" data-end="267.32"> We just can't square that with our own sense of nobility and our own sense of self.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="267.32" data-end="271.64"> So we'll run from the other person and we'll run from the truth and we'll be dishonest</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="271.64" data-end="274.24"> about that all the way to our grave.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="274.24" data-end="279.12"> We'll lie about stuff that happened in childhood that is relatively consequence free just to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="279.12" data-end="283.68"> save face, doubling down and redoubling down on a lie that could have just passed into</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="283.68" data-end="289.2"> history decades ago, simply out of pride and insecurity.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="289.2" data-end="294.08"> Reconciliation, the part where we admit to the truth of what the story was and we agree</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="294.08" data-end="299.40000000000003"> upon the narrative and the facts of it, that is the finish line that so often in a broken</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="299.4" data-end="305.96"> relationship we can see from a distance, but we take an off ramp and never make it there because</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="306.67999999999995" data-end="313.32"> it's painful to admit it's painful to square up those accounts with someone else so often.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="314.03999999999996" data-end="318.59999999999997"> We're at that finish line right now in the Old Testament, not just the book of Nehemiah,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="318.59999999999997" data-end="326.28"> the entire Old Testament, which is really, if you think about it, a document about a broken</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="326.28" data-end="331.08"> relationship where the tension is, will it ever get fixed or not?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="331.08" data-end="336.91999999999996"> And what would it take to reconcile something this doubled down upon and broken?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="336.91999999999996" data-end="342.35999999999996"> What would it take to reconcile a relationship where one party has gotten everything right,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="342.35999999999996" data-end="343.96"> something only God could do?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="343.96" data-end="346.28"> And it's God, that's the party.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="346.28" data-end="351.96"> So he got everything right, but the other party is responsible for everything that went wrong.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="351.96" data-end="353.47999999999996"> How do you fix it?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="353.48" data-end="359.72"> Well, throughout the Old Testament, we've seen all these moments where we flirt with getting it right,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="360.6" data-end="366.44"> but rarely do we see any kind of political will or group will on the part of the descendants of</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="366.44" data-end="374.20000000000005"> Abraham to just say the words, to admit the thing that would have to be admitted in order for the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="374.20000000000005" data-end="379.0"> relationship to be squared up and the narrative to be reconciled. Remember, I was asking you to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="379.0" data-end="383.16"> think about what those words were with your broken relationship. Well, what would those words be</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="383.96000000000004" data-end="389.0"> for the descendants of Abraham, the Jewish people, the Hebrews, the Israelites, what would it be</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="389.0" data-end="393.88"> after the whole Old Testament? Let's just play that out for a second. Pause even if you want to.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="393.88" data-end="397.16"> If you've been doing the whole Bible thing with me, just pause for a minute and think about it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="397.72" data-end="406.20000000000005"> Let's say you are in the shoes of the Jewish people in recently rewalled Jerusalem in 444 BC.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="406.20000000000005" data-end="411.72"> You're having a religious revival and you have the opportunity to declare something together</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="411.72" data-end="418.12"> toward God to try to reconcile the relationship, to reconcile the narrative, to come around to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="418.12" data-end="424.44000000000005"> admitting that the narrative of God about what's happened here is the true narrative and that your</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="424.44000000000005" data-end="429.56"> narrative has been false. Maybe pause for a second and just think about that. What would you say if</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="429.56" data-end="436.44000000000005"> you could quantum leap into the body of the people there and say exactly the right thing</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="436.44000000000005" data-end="441.08000000000004"> in this moment? What would that be? It's okay if you didn't pause. I won't be offended by that at all.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="441.08" data-end="445.24"> I have had a little longer to think about this because I knew I was going to say it into a microphone.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="445.24" data-end="451.15999999999997"> Here's what I've come up with. I think if you wanted to say the words that would solve the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="451.15999999999997" data-end="458.44"> relationship, it would need to go something like this. Okay, God, not only have I been wrong</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="459.08" data-end="467.79999999999995"> and have I resisted you for my entire life, but so have all of us. We've resisted you as a people.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="467.8" data-end="474.68"> Our institutions resist you. I resist you subconsciously. I resist you consciously.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="474.68" data-end="480.52000000000004"> And worst of all, I dress it up with fancy language and religious platitudes to make it look like I'm</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="480.52000000000004" data-end="488.68"> doing you a favor while I resist you and undermine you and violate your trust. My entire story,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="488.68" data-end="494.92"> a story that goes back for a couple thousand years is a story of stubbornness and resistance</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="494.92" data-end="500.36"> to you. I am no different than the people who came before me. I'm made of the same stuff. I have</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="500.36" data-end="508.6"> the same problems as them. And I have tried to spin dishonest, carefully framed and crafted</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="508.6" data-end="514.36"> narratives to make me look good and maybe even make you look a little bit bad. Like you might</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="514.36" data-end="520.9200000000001"> actually be the problem here with your difficult expectations and your standards of holiness.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="521.0" data-end="529.0"> Not only have I failed, but I've tried to project my failure on to you. Not only have I been the bad</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="529.0" data-end="535.16"> guy and my family has been the bad guy. I've tried to make you out to be the bad guy and I've tried</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="535.16" data-end="542.5999999999999"> to peddle that narrative to my neighbors so I could save face in my own insecurity. I have tried to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="542.5999999999999" data-end="549.7199999999999"> craft a dishonest narrative that I could live with, but my dishonest narrative keeps being exposed</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="549.72" data-end="557.1600000000001"> as a lie. The only thing that has been true and steady in this whole saga of events that is</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="557.1600000000001" data-end="564.52"> transpired over the last 2000 years with my people is you, God, you have been steady. You have been</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="564.52" data-end="569.5600000000001"> consistent. You have acted exactly the way you said you would. You have done all the things that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="569.5600000000001" data-end="577.08"> you said you would do. The fact that you are still here, despite our dishonesty, my personal</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="577.1600000000001" data-end="582.84"> dishonesty speaks to your character. If it were the other way around and you were acting like I've</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="582.84" data-end="589.1600000000001"> acted and I were perfect and blameless and holy like you, I think given my character, I would have</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="589.1600000000001" data-end="595.24"> walked away. I wouldn't be so forgiving and long suffering. The bottom line is this God, you were</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="595.24" data-end="602.84"> right and we were wrong. You were patient and forgiving and I snubbed that and I didn't appreciate</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="602.9200000000001" data-end="610.0400000000001"> that. I can't blame this on everybody else. I was wrong. You were right and I accept your version</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="610.0400000000001" data-end="616.6800000000001"> of the story, which is the true version of the story and I will not proliferate lies or dishonest</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="616.6800000000001" data-end="623.1600000000001"> versions of the story meant to make me look right and you look bad ever again. The chief pain and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="623.1600000000001" data-end="629.88"> hardship in my life has been brought upon me by me. The blessings in my life are from you.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="629.96" data-end="637.16"> And with all of that said, I want to be and I want us to be fully reconciled to you and your</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="637.16" data-end="643.08"> truth and your character. And that is what I'm committing myself to now. Yeah, I think it would</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="643.08" data-end="649.08"> take something like that. Those are the kind of face down words that are easy for me to say when</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="649.08" data-end="654.6"> I'm imagining myself in someone else's situation with someone else's problems, with someone else's</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="654.6" data-end="659.0"> failures, with someone else's people group. It's very easy for me to say all that stuff. It's very</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="659.0" data-end="665.88"> hard for me to say that stuff about myself in my actual situation and with my own carefully crafted</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="665.88" data-end="671.4"> and manicured narratives that always just happened to make me look good and other people look bad.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="671.4" data-end="676.68"> Yeah, it's real hard for me to admit to that stuff. Real easy for me to imagine what ought to be said</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="676.68" data-end="682.28"> on the part of the Jewish people right here in Nehemiah chapter nine. But as it turns out,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="682.28" data-end="688.76"> as we look forward, they seem to collectively be in a place where they are ready with no qualifications</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="688.76" data-end="696.04"> and no pushback to fully admit to say the words that would need to be said on their part to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="696.04" data-end="702.6"> demonstrate that they get it, to fully admit that God was right and they were wrong,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="702.6" data-end="708.6"> to fully admit that their narrative has been dishonest and skewed, even if quite sophisticated,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="709.16" data-end="714.36"> and that God's version of events is in fact the true version of events and that they want to be</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="714.36" data-end="720.6800000000001"> reconciled to it. When we pick it back up tomorrow in Nehemiah nine, maybe keep this conversation we</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="720.6800000000001" data-end="725.16"> just had in the back of your head because I think it's going to be really easy for Nehemiah nine to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="725.16" data-end="729.08"> sort of again, wash over us and be like, Oh, it's just sort of a recitation of a bunch of things</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="729.08" data-end="733.96"> we've already seen in the Old Testament. There's repeating the story or whatever. No, what they're</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="733.96" data-end="740.36"> doing is saying the hardest words, the truth, what they're doing is giving a recounting of God's</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="740.36" data-end="747.0"> rightness and their wrongness blow by blow through the whole thing. Not as though it's somebody else's</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="747.0" data-end="753.96"> mistake, but there's to own. What we are about to read together over the next few days is a remarkable</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="753.96" data-end="762.28"> demonstration of humility and honesty that shows the truest of heart level desires to get something</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="762.28" data-end="768.12"> right that the people on screen here have gotten wrong. It's excellent. And it is something that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="768.12" data-end="771.88"> we should not leave in this ancient text and be like, Oh, look what they did. They said some</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="771.88" data-end="777.0"> things they repeated the story. It's the kind of thing that should inspire us and affect how we</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="777.0" data-end="783.08"> handle our business when our relationships break and with the relationships that are already broken.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="783.08" data-end="787.64"> So we'll get into all of that next time around. Matt, this is a 10 minute Bible hour podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="787.64" data-end="795.48"> Let's do this again soon.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="798.12" data-end="800.12"> You</p>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('audio'); 
+        const transcriptSections = document.querySelectorAll('.transcript-section');
+
+        function updateTranscriptHighlight() {
+            const currentTime = audio.currentTime; 
+
+            transcriptSections.forEach((section) => {
+                const startTime = parseFloat(section.getAttribute('data-start'));
+                const endTime = parseFloat(section.getAttribute('data-end'));
+
+                if (currentTime >= startTime && currentTime <= endTime) {
+                    section.classList.add('highlight');
+                } else {
+                    section.classList.remove('highlight');
+                }
+            });
+        }
+
+        audio.addEventListener('timeupdate', updateTranscriptHighlight); 
+        });
+
+        function seekToTime(event) {
+        const audio = document.getElementById("audio");
+        audio.currentTime = +event.target.getAttribute('data-start')+.1;
+        audio.play()
+        }
+    </script>
+</body>
+</html>
