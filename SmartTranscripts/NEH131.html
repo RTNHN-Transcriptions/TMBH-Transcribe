@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Highlight</title>
+    <style>
+        .transcript-section {
+            color: #999999;
+        }
+        .highlight {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> How Are We Going to Fund This Thing? </h1>
+    <audio  id="audio" controls>
+        <source src="https://traffic.libsyn.com/secure/thetenminutebiblehourpodcast/NEH131.mp3" type="audio/mp3">
+    </audio>
+    <div id="transcript">
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="0.0" data-end="3.0"> You're listening to the 10 Minute Bible Hour Podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="3.0" data-end="5.5"> It's fast, fun, free, daily, deep-dye Bible.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="5.5" data-end="8.0"> And right now we're working on the book of Nehemiah.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="8.0" data-end="9.0"> If you're new, welcome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="9.0" data-end="14.0"> You can jump in right here, or you can always go back and start at the beginning of any season.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="14.0" data-end="20.0"> The whole podcast is available in an easy to use format at thetmbh.com.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="20.0" data-end="27.0"> I went on a super secret church hunt a couple days ago, and I think I would call it successful.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="27.0" data-end="29.0"> I'm going to call it marginally successful.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="29.0" data-end="31.0"> My wife and I were at a wedding in Connecticut.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="31.0" data-end="33.0"> I was telling you about the wedding over the last few episodes,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="33.0" data-end="35.0"> as we're talking about Nehemiah chapter 10 here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="35.0" data-end="37.0"> And the wedding, by the way, was glorious.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="37.0" data-end="41.0"> That's about as much fun as I've ever had at one of those, the vibe.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="41.0" data-end="42.0"> It was just, it was great.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="42.0" data-end="48.0"> And maybe I'm a little biased toward it because it felt different than normal weddings geographically.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="48.0" data-end="51.0"> We were in Connecticut, which is awesome, by the way.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="51.0" data-end="56.0"> Who knew Connecticut was lovely and beautiful and quaint as it actually is?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="56.0" data-end="57.0"> I had no clue.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="57.0" data-end="59.0"> I feel like I'd seen it before, but I had not seen it before.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="59.0" data-end="61.0"> So we're in Western Connecticut.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="61.0" data-end="62.0"> Everything was awesome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="62.0" data-end="64.0"> It was a great time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="64.0" data-end="67.0"> And after that, I had a little bit of time to go and do some exploring.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="67.0" data-end="70.0"> And when I have extra time, I go and explore churches, because that's what I like to do.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="70.0" data-end="74.0"> And in this case, it was a special church that we were going to go and look for,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="74.0" data-end="77.0"> because it's a church that my ancestors planted.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="77.0" data-end="81.0"> It's the first Baptist church that ever existed in Connecticut.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="81.0" data-end="86.0"> It was found in the 1705, and I wanted to go see if anything was left of it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="86.0" data-end="90.0"> So my wife and I drove down to Groton, Connecticut,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="90.0" data-end="92.0"> slash Mystic, Connecticut.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="92.0" data-end="95.0"> We drive way back out into the backwoods, and I figured out pretty quick,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="95.0" data-end="99.0"> alright, there's probably not going to be much left here, just based on how remote this is.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="99.0" data-end="103.0"> And sure enough, there was no church left when I got there,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="103.0" data-end="108.0"> but the graveyard was still there, which is beautiful in a way,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="108.0" data-end="112.0"> but also overgrown and kind of spooky and kind of a sleepy hollow,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="112.0" data-end="114.0"> bicabod, crane kind of manner.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="114.0" data-end="117.0"> The church, maybe I was able to figure out where it stood once.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="117.0" data-end="120.0"> It looked like there were maybe a couple of stones that might not have been natural</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="120.0" data-end="124.0"> that I could find on the ground that maybe were the foundation of this,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="124.0" data-end="128.0"> what would now be 320 year old church.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="128.0" data-end="132.0"> But ultimately, I stood there looking at the graveyard and thinking,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="132.0" data-end="134.0"> man, there's a lot of people in there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="134.0" data-end="135.0"> That's a lot of families.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="135.0" data-end="138.0"> It's a lot of years of history represented there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="138.0" data-end="139.0"> It's a lot of resources represented there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="139.0" data-end="142.0"> My family name is all over that graveyard.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="142.0" data-end="149.0"> They can manage crazy how much human and economic productivity happened,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="149.0" data-end="151.0"> is represented by the number of gravestones here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="151.0" data-end="154.0"> And also that the church that clearly meant so much to them,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="154.0" data-end="158.0"> where they were married and buried and all the other things that happened in church,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="158.0" data-end="162.0"> all the joys and grief of life and the growth subtly over time,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="162.0" data-end="165.0"> and the huge epiphanies and just all the great things that happened in church,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="165.0" data-end="167.0"> that building's no longer here.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="167.0" data-end="168.0"> What happened?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="168.0" data-end="172.0"> Well, there's a lot of benign explanations for that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="172.0" data-end="177.0"> It looks like the center of town migrated both east and west,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="177.0" data-end="184.0"> and the location of that church that made sense in 1705 didn't make sense as time went on.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="184.0" data-end="185.0"> Could be.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="185.0" data-end="189.0"> Ultimately, the church there that my ancestors founded and pastored</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="189.0" data-end="193.0"> over three generations for 150 years is crazy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="193.0" data-end="197.0"> Three pastors, all from my family, in succession,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="197.0" data-end="201.0"> pastored that church for the first 150 years of its existence.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="201.0" data-end="206.0"> But eventually, like so many of the churches that I saw around New England on this visit,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="206.0" data-end="210.0"> they merged with another church to make the resources work or make sense,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="210.0" data-end="212.0"> and then the merged church goes somewhere else.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="212.0" data-end="216.0"> In this case, they merged with another Baptist church</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="216.0" data-end="221.0"> and are now known as the Union Baptist Church of Mystic, Connecticut,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="221.0" data-end="225.0"> which is like a block up the street from Mystic Pizza,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="225.0" data-end="227.0"> which is kind of famous.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="227.0" data-end="228.0"> That was sort of cool.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="228.0" data-end="233.0"> Like I said, there's benign explanations for why that church that so many people cared about</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="233.0" data-end="236.0"> and invested in so much is now gone.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="236.0" data-end="239.0"> But there's also an economic explanation.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="239.0" data-end="244.0"> At some point, it financially did not make sense to continue to do things</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="244.0" data-end="246.0"> the way they were doing things.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="246.0" data-end="247.0"> It did not make sense.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="247.0" data-end="252.0"> They didn't have the money to maintain an architecture style from 1705</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="252.0" data-end="256.0"> in whatever 1850 or whenever they merged and it went away.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="256.0" data-end="260.0"> It's very expensive to keep up old stone buildings,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="260.0" data-end="267.0"> the kind of buildings that tell a story, grandiose God and the draw the eye upward.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="267.0" data-end="272.0"> I mean, my friends from more high church traditions are rightly very proud</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="272.0" data-end="276.0"> of the beautiful buildings their traditions have made.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="276.0" data-end="279.0"> But there's another side to that coin as well,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="279.0" data-end="283.0"> which is that so many of those buildings that look beautiful on the outside</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="283.0" data-end="288.0"> can't be maintained and it would cost more than what it would cost to build</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="288.0" data-end="294.0"> 10 new churches to try to prop up and fix and repair that beautiful old stone church.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="294.0" data-end="298.0"> And so gradually they go empty or they fall down or catch fire.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="298.0" data-end="303.0"> I think of the one in St. Louis, the St. LaBorias.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="303.0" data-end="304.0"> That's the name of it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="304.0" data-end="306.0"> I mean, I went and did a video there and then like a month later,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="306.0" data-end="308.0"> the thing completely burned down.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="308.0" data-end="309.0"> And it's just gone.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="309.0" data-end="312.0"> It's super expensive to maintain these things.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="312.0" data-end="316.0"> And every time somebody builds a church, they do so with the intention</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="316.0" data-end="318.0"> to fund it forever.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="318.0" data-end="319.0"> They count the cost.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="319.0" data-end="323.0"> They're doing their best to set up future generations to make it go.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="323.0" data-end="328.0"> But it's just really, really difficult to sustain such a thing because time changes.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="328.0" data-end="336.0"> And it's very hard to future proof the economics of a spiritual life that revolves</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="336.0" data-end="339.0"> around that facility around that building.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="339.0" data-end="340.0"> Where am I going with all of this?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="340.0" data-end="342.0"> Why am I telling you all of this?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="342.0" data-end="343.0"> One, I went to Connecticut.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="343.0" data-end="344.0"> It was a really nice trip.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="344.0" data-end="347.0"> I saw this cool stuff and I thought you might find it interesting.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="347.0" data-end="353.0"> Two, because I think it relates hugely to Nehemiah 10 and this covenant that all of these people</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="353.0" data-end="356.0"> from the song are ratifying together.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="356.0" data-end="359.0"> You got the grand procession, which is a song in all the names,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="359.0" data-end="362.0"> then metaphorically you've got the statement of purpose.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="362.0" data-end="367.0"> Brothers, dearly beloved, we're gathered here today to renew this covenant and to ratify</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="367.0" data-end="369.0"> this with the one true God.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="369.0" data-end="372.0"> Then you get past that and you get into the actual clauses, the actual vows.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="372.0" data-end="377.0"> And as we've seen over the last couple of days of our conversation, clause number one is we're</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="377.0" data-end="380.0"> not going to keep making the same mistakes we've been making for hundreds of years.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="380.0" data-end="384.0"> We're not going to keep intermarrying with our neighbors and bring in all of their bad</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="384.0" data-end="388.0"> ideas, different time as we've discussed, a very different situation, a very unique situation.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="388.0" data-end="393.0"> But that was something they needed to do in this context with who they were in this time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="393.0" data-end="398.0"> Then clause number two of the vows is we're going to do business different and we're going to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="398.0" data-end="400.0"> honor the Sabbath as part of how we do business.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="400.0" data-end="401.0"> This is very short.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="401.0" data-end="404.0"> This is only a couple of sentences for these two clauses.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="404.0" data-end="411.0"> But now the rest of this covenant from Nehemiah 10 32, basically to the end of the chapter,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="411.0" data-end="415.0"> I mean, it's probably like five times the amount of total volume of material is those first</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="415.0" data-end="416.56"> two vows that I just mentioned.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="416.56" data-end="423.96"> The rest of this is just trying to future proof the life surrounding the temple, trying to</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="423.96" data-end="430.44"> come up with a covenant for how we're going to fund this thing so that economic realities</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="430.44" data-end="435.08"> don't break these things we're promising to do with the best of intentions.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="435.08" data-end="441.08"> Spiritually, we might be in a great place right now, they are all saying, but economically</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="441.08" data-end="445.76"> it's really hard to be in that place when you didn't plan carefully and you do have</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="445.76" data-end="452.2"> a geographically centered expression of faith that revolves very much around this sacred</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="452.2" data-end="453.2"> building.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="453.2" data-end="457.03999999999996"> I mean, you got to have a funding model for this.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="457.03999999999996" data-end="463.44"> Now in the past, the funding model for how to make the temple go and the walls and Jerusalem</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="463.44" data-end="467.0"> and all of this stuff in the age of exile, the age that we've been looking at in Nehemiah</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="467.0" data-end="474.92"> and Esther has been wait until the winds of popular opinion blow in your direction.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="474.92" data-end="480.96"> Wait until it is politically expedient for one of the achaemenid kings, Cyrus, Darius</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="480.96" data-end="487.36"> Xerxes, Artaxerxes to like you and shower you with blessings very publicly probably for</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="487.36" data-end="489.08"> his own purposes, but whatever.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="489.08" data-end="490.64"> That's how politics works.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="490.64" data-end="493.84"> And then when that money comes in, you pounce on it and you build something new.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="493.84" data-end="495.76"> That's not very sustainable.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="495.76" data-end="500.44"> And clearly, Nehemiah, Ezra and the people here, they all knew that because they've got</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="500.44" data-end="504.08"> all of this material that we're going to look at over the next few days with the rest of</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="504.08" data-end="510.44"> this covenant that is all about moving away from that unsustainable model for funding this</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="510.44" data-end="515.48"> and moving toward a self funded model that they are going to commit themselves to and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="515.48" data-end="518.28"> their kids to and their grandkids to.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="518.28" data-end="522.72"> And it is going to continue to be in place all the way up till now.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="522.72" data-end="527.0400000000001"> I guess you could say, I mean, the temple tax that they're about to put in place right</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="527.0400000000001" data-end="532.0"> here with this covenant, the third vow of this covenant that we're going to look at is establishing</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="532.0" data-end="537.72"> or reestablishing, recommitting to the ancient temple tax from each household.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="537.72" data-end="542.72"> This thing was still in place in the book of Matthew, as we'll discuss in coming days.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="542.72" data-end="546.36"> And there's a whole miracle around it when it comes time to pay the temple tax and the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="546.36" data-end="550.64"> temple tax is found in the mouth of a fish on the sea of Galilee.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="550.64" data-end="553.4"> So I mean, this worked, it's stuck.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="553.4" data-end="561.08"> And frankly, it's pretty good forethought on their part to say, we need to ratify a covenant</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="561.08" data-end="566.72"> that accounts for setting this thing up for success moving forward into the future.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="566.72" data-end="571.68"> So verse 32 of Nehemiah 10, they all promised together, we assume the responsibility for</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="571.68" data-end="575.68"> carrying out the command is to give a third of a shekel each year for the service of the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="575.68" data-end="580.28"> house of our God, for the bread set out at the table for the regular grain offerings</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="580.28" data-end="585.0"> and burnt offerings for the offerings of the Sabbath's new moon festivals and appointed</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="585.0" data-end="590.36"> feasts for the holy offerings for sin offerings to make atonement for Israel and for all the</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="590.36" data-end="592.0799999999999"> duties of the house of our God.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="592.0799999999999" data-end="593.8"> Well, it's huge.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="593.8" data-end="597.76"> It's voluntary personal responsibility.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="597.76" data-end="599.8399999999999"> Nobody is making them do that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="599.8399999999999" data-end="604.36"> Nobody is making them commit, not just having a building that's a quaint relic of things</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="604.36" data-end="609.4"> from the past that I guess our ancestors were kind of into, but rather no one is making</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="609.4" data-end="616.16"> them commit to it as the central hub of their religious and cultural life, not just for</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="616.16" data-end="622.24"> them, but for all of the descendants of Abraham scattered all around the great Persian empire.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="622.24" data-end="630.56"> No, they're choosing this for themselves because they understand that God has dwelt among them</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="630.56" data-end="636.04"> in that temple and that it is meant to be understood to be the center hub of the whole</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="636.04" data-end="641.12"> sacrificial system, which is so crucial in the Old Testament relationship between God</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="641.12" data-end="643.04"> and his chosen people.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="643.04" data-end="646.4"> But they know that if they don't come up with any kind of funding model and their plan is</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="646.4" data-end="651.48"> just to hope that everybody remains forever for centuries on the camp high that we feel</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="651.48" data-end="656.92"> right now that that model is stupid and the building is not going to work out.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="656.92" data-end="658.4"> Nothing is going to work out.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="658.4" data-end="662.76"> They're going to have to institute something that will last and what they end up instituting</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="662.84" data-end="666.36"> as we've seen in the verses we just looked at and as we'll see through the rest of Nehemiah</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="666.36" data-end="671.0"> chapter 10 is a way of thinking this as the first money that we earn.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="671.0" data-end="672.4399999999999"> It's not even ours.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="672.4399999999999" data-end="676.76"> This is God's blessing and God's bounty and we are giving it back to God.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="676.76" data-end="683.24"> We are momentary custodians of this and in the physical world, they seem to understand</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="683.24" data-end="690.2"> that money represents human energy, human capital, the investment of human time and that</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="690.2" data-end="696.8000000000001"> though money is often a very crass thing to discuss, it is needed to buy the time from</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="696.8000000000001" data-end="703.36"> the people and the resources and to nurture the expertise that is needed to make this</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="703.36" data-end="705.48"> temple system go.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="705.48" data-end="709.6800000000001"> Now there are probably a bajillion people who were involved with this thing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="709.6800000000001" data-end="714.08"> Probably we read or rather saying a bunch of their names here earlier in Nehemiah chapter</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="714.08" data-end="715.08"> 10.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="715.08" data-end="717.72"> There are probably tons of people who are like, I would do this for free.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="717.72" data-end="719.2"> This is the thing I believe in most.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="719.2" data-end="725.6"> Of course I would do it for free but also their dads and they have families and families</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="725.6" data-end="728.72"> were much bigger and more extended at this time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="728.72" data-end="734.12"> They have responsibilities for that and so wanting to do it for free that is temple stuff</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="734.12" data-end="739.4000000000001"> is nice but there's a reality here and the reality is in order for them to provide and</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="739.4000000000001" data-end="744.0400000000001"> be the head of a household, they would have to take a bunch of time and go to practical</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="744.04" data-end="749.3199999999999"> trade time for money kind of tasks just to meet those needs and there wouldn't be time</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="749.3199999999999" data-end="756.16"> left for them to lean into their area of expertise and to make this temple stuff happen.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="756.16" data-end="760.8399999999999"> We can be frustrated by how money works in a physical, fallen world where we live but</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="760.8399999999999" data-end="768.24"> the truth is money represents human capital and the resources to sustain people and these</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="768.24" data-end="769.68"> people were realists.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="769.68" data-end="774.64"> They knew that if there was not a financial system that was voluntary yet binding built</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="774.64" data-end="780.8"> into place that their building was going to end up like the church building that my ancestors</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="780.8" data-end="786.92"> planted and nurtured for all those years and now I can't even find for sure a single stone</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="786.92" data-end="787.92"> that it was made out of.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="787.92" data-end="790.4799999999999"> I don't think anybody failed there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="790.4799999999999" data-end="796.64"> That's the fate of most of these things unless something really remarkable happens and what</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="796.64" data-end="802.28"> I see here is them doing their very best to say we practically understand that it takes</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="802.28" data-end="808.0"> a lot to make something like this happen, to realize something like a temple and a temple</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="808.0" data-end="814.26"> system and to fund it and to hire and to pay for excellence in the people who will lead</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="814.26" data-end="815.26"> us.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="815.26" data-end="817.76"> And so, all right, this is how we're going to do it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="817.76" data-end="819.1999999999999"> This is a way that we can pull it off.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="819.1999999999999" data-end="823.36"> But I got to say tip of the cap to the people here in 444 BC who are trying to figure this</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="823.44" data-end="830.24"> out, not just for the moment, but how to make it work for the super ultra long haul so</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="830.24" data-end="834.84"> that the truths and the presence of God and the clarity that they are feeling in this</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="834.84" data-end="839.4"> moment can be handed down and be a blessing to generations to come.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="839.4" data-end="840.4"> All right, I'm Matt.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="840.4" data-end="842.4"> This is the 10 Minute Bible Hour podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="842.4" data-end="843.5600000000001"> Let's do this again soon.</p>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('audio'); 
+        const transcriptSections = document.querySelectorAll('.transcript-section');
+
+        function updateTranscriptHighlight() {
+            const currentTime = audio.currentTime; 
+
+            transcriptSections.forEach((section) => {
+                const startTime = parseFloat(section.getAttribute('data-start'));
+                const endTime = parseFloat(section.getAttribute('data-end'));
+
+                if (currentTime >= startTime && currentTime <= endTime) {
+                    section.classList.add('highlight');
+                } else {
+                    section.classList.remove('highlight');
+                }
+            });
+        }
+
+        audio.addEventListener('timeupdate', updateTranscriptHighlight); 
+        });
+
+        function seekToTime(event) {
+        const audio = document.getElementById("audio");
+        audio.currentTime = +event.target.getAttribute('data-start')+.1;
+        audio.play()
+        }
+    </script>
+</body>
+</html>
