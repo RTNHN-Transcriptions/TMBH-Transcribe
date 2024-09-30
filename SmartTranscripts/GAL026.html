@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Highlight</title>
+    <style>
+        .transcript-section {
+            color: #999999;
+        }
+        .highlight {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> Hi, Claudius </h1>
+    <audio  id="audio" controls>
+        <source src="https://traffic.libsyn.com/secure/thetenminutebiblehourpodcast/GAL026.mp3" type="audio/mp3">
+    </audio>
+    <div id="transcript">
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="0.0" data-end="7.0"> Music playing</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="9.76" data-end="12.6"> You're listening to the 10 minute Bible Hour podcast, it's best,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="12.6" data-end="14.48"> hunt, free, daily deep dive Bible.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="14.48" data-end="16.6"> And right now we're talking about relations.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="19.6" data-end="23.88"> A little while back, I got to take my kids to the most magical place in the world to me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="23.88" data-end="26.96"> Somewhere I've wanted to show them for a long time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="26.96" data-end="29.0"> Somewhere where I guess I have to grow up.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="29.0" data-end="32.32"> I mean, they've got to be a certain age to appreciate this place.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="32.32" data-end="35.12"> And I'm being around the bush because I'm going to let you guess where it is.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="35.12" data-end="38.519999999999996"> Now, those of you who are here for the first time, this is your first episode ever,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="38.519999999999996" data-end="40.2"> you're probably feeling a little disoriented, you're like,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="40.2" data-end="45.2"> how on earth would I know what the most magical place in the world to you is internet stranger,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="45.2" data-end="47.32"> who I've now hung out with for 27 seconds?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="47.32" data-end="48.760000000000005"> I don't know the answer to that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="48.760000000000005" data-end="50.28"> That's cool, we'll get to know each other better.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="50.28" data-end="52.8"> But for those of you who've maybe hung out with me a little longer,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="52.8" data-end="54.0"> what do you think? What's your guess?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="54.0" data-end="56.84"> All right, Tyler driving the silver Nissan Sentra.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="56.84" data-end="60.52"> That is an excellent guess that you just shrieked out the window.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="60.52" data-end="64.2"> But no, it is not Paris, France. Anybody else?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="64.2" data-end="66.04"> Yes, Shawna got it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="66.04" data-end="70.24000000000001"> Shawna sitting at the table there drinking her morning coffee in her kitchen.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="70.24000000000001" data-end="71.92"> Before the kids wake up, you are correct.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="71.92" data-end="74.44"> It's Rome, Italy. Well done, Shawna. High five.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="74.44" data-end="76.32000000000001"> And good job to you, Tyler. Good guess.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="76.32000000000001" data-end="79.68"> Yeah, Rome, Italy. It's the coolest place ever for me because all the areas of history</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="79.68" data-end="82.32000000000001"> that I really like, they're all stacked up right there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="82.32000000000001" data-end="85.2"> And in the process of being there, we only had a few days there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="85.2" data-end="88.84"> We did this trip on the ultra, ultra cheap.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="88.84" data-end="93.72"> But one of the things that we splurged on a little bit was taking them to the Vatican Museum.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="93.72" data-end="94.88"> We only had a couple hours.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="94.88" data-end="97.04"> We saw as much of it as we could.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="97.04" data-end="104.28"> And as we're walking through it, there is this one hall of Roman imperial sculptures.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="104.28" data-end="106.80000000000001"> And in it, there's a big basin in the middle.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="106.80000000000001" data-end="107.80000000000001"> I don't remember what it's for.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="107.80000000000001" data-end="114.08"> It looks like maybe the kind of basin that you would use for some sort of ancient Roman pagan cult,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="114.08" data-end="118.92"> like something you pour blood into to appease Jupiter or something.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="118.92" data-end="119.84"> I have no idea.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="119.84" data-end="121.03999999999999"> It's a big cool basin.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="121.03999999999999" data-end="130.52"> And all around it in this red room are grandiose sculptures of the emperors presented in God-like form.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="130.96" data-end="134.04"> And my son was with me and he looked at one of these and was like,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="134.04" data-end="136.44"> whoa, look at that guy, six-pack dad.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="136.44" data-end="140.72"> And I had to admit that was a very impressive six-pack on that guy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="140.76" data-end="147.56"> But I also had to chuckle to myself because the guy with that amazing six-pack has a reputation</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="147.56" data-end="152.96"> for being one of the most physically frail Roman leaders of all time.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="153.16" data-end="155.56"> This is the emperor Claudius.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="155.56" data-end="157.44"> Claudius is in the Bible.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="157.44" data-end="159.88"> He gets mentioned in Acts chapter 11.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="160.24" data-end="164.88"> And as we discussed last time around, Claudius is one of the,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="164.88" data-end="170.56"> what would you say, five emperors who come up or are alluded to in the New Testament?</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="170.56" data-end="173.4"> Caesar Augustus is the first emperor of Rome.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="173.4" data-end="180.76"> He's the guy who emerged atop the heap after the fallout with the assassination of Julius Caesar</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="180.76" data-end="184.88"> and then the civil war between the team of Caesar Augustus.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="184.88" data-end="191.36"> He used to go by Octavian and his enemies, who used to be former friends, Mark Antony and Cleopatra.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="191.64000000000001" data-end="192.88"> Augustus won all of that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="192.88" data-end="194.24"> And then he called a census.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="194.24" data-end="198.28"> And that census is what caused Mary and Joseph to go to Bethlehem and then Jesus was born.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="198.28" data-end="200.04"> So Augustus fits in there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="200.04" data-end="200.51999999999998"> Cool.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="200.51999999999998" data-end="204.32"> And most of the rest of the reign of Augustus gets skipped.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="204.32" data-end="207.4"> There's not a lot of New Testament that covers that stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="207.64" data-end="215.16"> But after him, the emperor, Tiberius takes over the Sea of Galilee gets renamed in his honor.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="215.2" data-end="221.48"> And ultimately the execution of Jesus of Nazareth, the buck stops with Tiberius for that one.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="221.48" data-end="223.12"> He's the guy who was in charge.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="223.44" data-end="227.72"> He's the guy who ponches Pilate, ultimately answered to.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="227.96" data-end="232.68"> But Tiberius is reigned, spiraled toward the end and he got replaced with a nut job, a guy named</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="232.68" data-end="233.6"> Caligula.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="233.6" data-end="234.64"> He was awful.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="234.64" data-end="239.56"> And I could tell you all kinds of stories about him and that would make for really fun podcast fodder,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="239.56" data-end="240.88"> but I can't justify it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="241.07999999999998" data-end="243.28"> We got to get from Caligula to the next guy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="243.64" data-end="251.68"> So Caligula, he's not really on screen at all in the New Testament, but he was the emperor while some of the events of the New Testament are happening.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="251.92000000000002" data-end="262.04"> But the next emperor of Rome who is on screen and whose name comes up and whose actions deeply overlap with the narrative of the New Testament is Claudius.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="262.48" data-end="270.28000000000003"> And Claudius, who was the fourth emperor of Rome, was the uncle of the third emperor of Rome, Caligula.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="270.32" data-end="272.28000000000003"> That might cause you to ask a question.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="272.72" data-end="278.2"> Well, how come Claudius got passed over and this punk kid, Caligula ended up in charge.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="278.2" data-end="281.48"> It would make more sense for his uncle to be in charge.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="281.48" data-end="283.28000000000003"> Well, there's a lot of reasons for that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="283.6" data-end="289.36"> And those reasons, I think, kind of factor in or help us fill out the story of the New Testament.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="289.36" data-end="291.0"> So we are going to cover that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="291.04" data-end="293.96000000000004"> Claudius wasn't super interested in public life.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="293.96000000000004" data-end="295.64000000000004"> He was interested in being a story.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="295.88" data-end="299.20000000000005"> He was a free swing and guy with what he wrote.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="299.20000000000005" data-end="300.72"> He didn't toe the party line.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="300.76" data-end="304.44"> He didn't just write histories that would speak fondly of the regime.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="304.44" data-end="311.44"> He was trying to write honest histories, but young Claudius could kind of get away with writing this stuff even while</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="311.48" data-end="313.92"> the emperor Augustus was still in charge.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="313.92" data-end="314.52000000000004"> I don't even know.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="314.52000000000004" data-end="323.88"> Some of Claudius's book wasn't the most flattering toward the emperor Augustus because the emperor Augustus was from the same family as Claudius.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="323.92" data-end="325.40000000000003"> They were closely related.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="325.64000000000004" data-end="332.72"> Basically, Claudius had plot armor because he was related to the people he criticized lightly in his histories the right way.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="333.20000000000005" data-end="339.8"> So even though it didn't get him killed, it did cause young Claudius to be not taken seriously at court.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="339.84000000000003" data-end="340.92"> Like he's a wild card.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="340.92" data-end="342.32"> You just can't trust this guy.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="342.32" data-end="343.52000000000004"> He's not in on the game.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="343.52000000000004" data-end="344.56"> He's not down.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="344.56" data-end="346.64"> He's not playing along with what we're doing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="346.92" data-end="348.76"> You can't criticize the family.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="348.76" data-end="349.52000000000004"> You idiot.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="349.52000000000004" data-end="351.24"> You just do your thing over there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="351.52000000000004" data-end="355.2"> So that's one of the reasons that Claudia is probably at a tough time early on politically.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="355.2" data-end="358.92"> But the second reason is that apparently he had all kinds of afflictions.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="358.92" data-end="369.2"> And this is where it comes back to the sculpture, the amazing God-like sculpture of Claudius with the six back that my son and I saw in the Vatican Museum and Rome that I mentioned at the outset of this conversation.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="369.76" data-end="373.32"> Claudius probably didn't have the super tight six pack.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="373.68" data-end="376.32"> He probably looked a bit odd.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="376.59999999999997" data-end="381.0"> He probably presented himself socially in a way that was a bit off.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="381.0" data-end="391.59999999999997"> More than one ancient historian said that he had a problem with drooling, slobbering, snodding himself that he had fit and even seizures.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="391.59999999999997" data-end="393.4"> Maybe he was epileptic.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="393.71999999999997" data-end="404.47999999999996"> So Caligula, whose nickname was Baby Boots, because he used to trompe around in his dad's battle boots when he was a little baby when they were fighting the barbarian horde up in Germany.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="404.91999999999996" data-end="408.76"> Caligula who could never shake that obnoxious baby boots nickname.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="408.76" data-end="412.47999999999996"> My understanding is that he at least looked the part of an emperor.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="412.47999999999996" data-end="418.23999999999995"> And if there were a very flattering sculpture of him, it might be more true.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="418.48" data-end="429.28000000000003"> But Claudius on the other hand, because of his physical maladies and because he chose to fashion himself, is an honest to story and would couragely speak truth to power.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="429.28000000000003" data-end="430.24"> He was relegated.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="430.24" data-end="436.32"> He was on the sidelines when Caligula, who is just a nightmare of a man, was in power.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="436.84000000000003" data-end="444.96000000000004"> Really one of the less horrible stories about Caligula is that he constantly picked on his uncle Claudius at court.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="445.44" data-end="473.91999999999996"> And when Claudius apparently, again, because of his maladies, would doze off or have a fit or something at a Roman imperial meal with the imperial family and senators and noblemen present, Caligula would encourage all of his highfalutin guests to pelt his uncle Claudius while he was asleep or having a seizure with fruit and pits from their peaches and little rocks or pebbles or whatever, until he would hold his arms up like quasi-modo.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="473.92" data-end="474.8"> And I don't look at me.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="474.8" data-end="476.96000000000004"> I'm hideous and shrink away.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="476.96000000000004" data-end="491.12"> Caligula, when he was emperor, also famously financially abused Claudius by very publicly making him pay exorbitant amounts for things that were way cheaper for anybody else, just to make a point.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="491.32" data-end="503.52000000000004"> So this kind of merciless mockery and picking on someone with these kind of maladies, they would have gone over okay with at least quite a few people, but it seems like Claudius stored all these things up in</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="503.52" data-end="505.03999999999996"> treasured them in his heart.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="505.03999999999996" data-end="510.64"> Because at some point, Caligula and most of his family inexplicably one day just got</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="510.64" data-end="511.44"> deadified.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="511.68" data-end="513.68"> And we don't know exactly who did it.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="513.68" data-end="522.72"> There's some ancient historians, including one we talk about a lot, Josephus, who suggests that maybe Claudius had something to do with that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="523.04" data-end="532.88"> But there are other accounts that suggest that Claudius was found cowering behind a curtain by members of the Praetorian Guard who had carried out this coup.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="533.36" data-end="538.64"> And the Praetorian Guard appointed Claudius to be the next emperor.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="538.64" data-end="541.04"> You're our guy, they said.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="541.04" data-end="542.96"> And this is a first in Roman history.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="542.96" data-end="546.96"> No Roman emperor had been picked by the military before.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="547.36" data-end="551.52"> Yet people fell in line and acknowledged Claudius as emperor.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="552.0" data-end="561.44"> And then weirdly, Claudius, who looks entirely not promising as a pointy for this very significant role.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="561.9200000000001" data-end="570.8800000000001"> And who looks like somebody who maybe could even be sort of a puppet emperor, easily controlled by the military or a few powerful noblemen behind the scenes.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="570.8800000000001" data-end="571.36"> Nope.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="571.84" data-end="573.36"> It doesn't turn out that way at all.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="573.7600000000001" data-end="582.5600000000001"> Claudius gets into power and it turns out he's incredibly adept at organization and big picture thinking.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="582.8800000000001" data-end="590.8800000000001"> And he's a pretty stinking, effective emperor, ruthless like they all were for sure, but very practically minded.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="591.12" data-end="599.52"> And an excellent stabilizing follow up to the massively unstabilizing reign of his nephew and predecessor, the insane Caligula.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="600.0" data-end="607.52"> Now, all of these things that I've told you are part of the story that is swirling around in the background of the original audience of the Bible.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="608.0" data-end="613.92"> Everybody had heard whispers and rumblings and rumors of all of this imperial court intrigue.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="614.4799999999999" data-end="622.56"> And somehow what is left of the Herod family is tangled up with all of this assassination and plotting and so forth as well.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="622.88" data-end="634.9599999999999"> And so tomorrow we're going to look at more of what happened in the reign of Claudius and how it weaves together with the New Testament narrative in overt spoken ways and in more subtle ways.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="634.9599999999999" data-end="636.9599999999999"> I just love the history stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="637.6" data-end="643.2"> The same impulse that made me want to take my kids to Rome and show them all of the things, but look at that.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="643.52" data-end="645.52"> Think about how old that rock is.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="645.6800000000001" data-end="651.2"> Consider who got stabbed right there. Think about who was in jail right there. It's amazing.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="651.2" data-end="664.1600000000001"> The same impulse that I felt with them is exactly what makes episodes like this happen on this podcast because I just want to show you the things because I absolutely love the way it all overlaps and it all dovetails together.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="664.4" data-end="673.12"> The Bible, the history of Christianity, it is not some magical fairy land thing that you have to dispense with any belief in historical reality to believe in.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="673.76" data-end="679.52"> No, these are real places in real times doing real things that are actually documented.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="680.0" data-end="683.1999999999999"> Everything is where it ought to be when it ought to be there.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="683.52" data-end="693.36"> And that means that all of known history from this era can help flesh out our understanding of what is happening in this, I believe,</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="693.36" data-end="699.44"> God inspired document that has real implications for my life now.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="699.44" data-end="704.4"> I just get so excited about it. Thank you for indulging me on this stuff.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="704.4" data-end="708.72"> All right, more history rabbit trail tomorrow. I'm Matt. This is the 10 minute Bible Hour podcast.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="708.72" data-end="710.72"> Let's do this again soon.</p>
+        
+        <p onclick="seekToTime(event)" class="transcript-section" data-start="723.36" data-end="725.36"> You</p>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const audio = document.getElementById('audio'); 
+        const transcriptSections = document.querySelectorAll('.transcript-section');
+
+        function updateTranscriptHighlight() {
+            const currentTime = audio.currentTime; 
+
+            transcriptSections.forEach((section) => {
+                const startTime = parseFloat(section.getAttribute('data-start'));
+                const endTime = parseFloat(section.getAttribute('data-end'));
+
+                if (currentTime >= startTime && currentTime <= endTime) {
+                    section.classList.add('highlight');
+                } else {
+                    section.classList.remove('highlight');
+                }
+            });
+        }
+
+        audio.addEventListener('timeupdate', updateTranscriptHighlight); 
+        });
+
+        function seekToTime(event) {
+        const audio = document.getElementById("audio");
+        audio.currentTime = +event.target.getAttribute('data-start')+.1;
+        audio.play()
+        }
+    </script>
+</body>
+</html>
